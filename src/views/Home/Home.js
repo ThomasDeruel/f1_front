@@ -1,9 +1,11 @@
 import React from 'react';
-
-const HomeContainer = () => {
+import MenuConsumer from '../../components/MenuConsumer';
+const HomeContainer = ({menuOpen,setMenuOpen}) => {
     return (
-        <p>Home</p>
+        <div>
+          <p>Home</p>
+        </div>
     )
 }
 
-export default HomeContainer;
+export default MenuConsumer(HomeContainer);
