@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuConsumer from '../../components/MenuConsumer';
+
 const HomeContainer = ({menuOpen,setMenuOpen}) => {
     return (
         <div>
