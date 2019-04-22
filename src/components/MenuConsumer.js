@@ -1,5 +1,6 @@
 import React from 'react';
 import {MenuContext} from '../helpers/context/menu-context';
+
 // here is a higher order component to consume my MenuContext (cf App.js)
 
 const MenuConsumer = Component => {
