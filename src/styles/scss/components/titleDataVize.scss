@@ -1,0 +1,22 @@
+
+.titleData{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    //padding:2% 0 2% 0;
+    font-size: 43px;
+ }
+
+ .titleData, .titleData::before, .titleData::after {
+    display:inline-block;
+    vertical-align: middle;
+    
+  }
+  .titleData::before, .titleData::after {
+    height:4px;
+    width:82px;
+    background:#CF2933;
+    content:""
+  }
+  .titleData:before { margin-right: .3rem }
+  .titleData:after { margin-left: 16px; }
