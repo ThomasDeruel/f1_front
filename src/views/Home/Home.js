@@ -33,7 +33,7 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
             </div>
       </section>
       <div className={'def'}>
-        <div style={{ padding: "3% 0 3% 0" }}> <TitleDataVize /></div>
+        <div style={{ padding: "3% 0 3% 0" }}> <TitleDataVize/></div>
 
         <div className={'par'}>
           <p className={'text'}>There are many simple beauty tips that don’t have to take up a lot of time.
@@ -74,8 +74,9 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
                 <img src={graph2} alt="bg-graph2"/>
             </div>
             <div className={'container-second'}>
-                <div className={'container-second_title'}>
-                    <h2>Les Ecuries<br/><span>Parce que la f1 c'est une équipe</span></h2>
+                <div className={'container-second_description'}>
+                    <h2 className={'title'}>Les Ecuries</h2>
+                    <h3>Parce que la f1 c'est une équipe</h3>
                     <p>There are many simple beauty tips that don’t have to take up a lot of time.
                         These simple tips can be accomplished in a matter of minutes and can have a noticeable improvement on your appearance.
                         These beauty tips include simple suggestions such as getting enough sleep each night, drinking plenty of water each day and

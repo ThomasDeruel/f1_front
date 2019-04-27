@@ -2,8 +2,7 @@ section {
     width: 100%;
     height: auto;
     .inner {
-        max-width: 90%;
-        margin: 0 auto;
+        display: flex;
     }
     &.introDataVize{
         min-width: 100vw;
@@ -59,32 +58,47 @@ section {
 
     &.section3 {
         background-color: #F6F6F6;
+        position: relative;
         .inner {
-            /*position: relative;*/
             .container-first {
-                max-width: 40%;
-                display: inline-block;
-
+                width:calc(40% - 80px);
+                img {
+                    margin: 4% 0 4% 8%;
+                }
             }
             .container-second {
-                max-width: 60%;
+                width: 60%;
                 text-align: left;
-                display: inline-block;
-                position: relative;
+                margin-top: 80px;
                 p {
                     font-size: 1rem;
                     background-color: #FFFFFF;
                     padding: 32px;
                     line-height: 26px;
+                    margin-top: 38px;
                 }
-                &_title {
+                &_description {
                     display:inline-block;
-                    position: absolute;
+                    position: relative;
+                    z-index: 2;
+                    width: 60%;
+                    h2:after {
+                        content: "";
+                        background: #CF2933;
+                        height: 5px;
+                        width: 85px;
+                        display:inline-block;
+                        margin-left: 5px;
+                    }
+                    .title {
+                        font-size: 43px;
+                    }
                 }
             }
             img.ecurie {
-                /*position: absolute;
-                right: 0;*/
+                position: absolute;
+                right: 0;
+                bottom: -75px;
             }
         }
     }
