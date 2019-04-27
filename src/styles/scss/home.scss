@@ -1,64 +1,122 @@
-.introDataVize{
-    min-width: 100vw;
-    display: flex;
-    max-height: 780px;
-    .presentation{
-        min-width: 40%;
-        .logo{
-            width: 215,44px;
-            height: 29,94px;
-            display: block;
-            margin: auto;
-            padding: 10% 0  20% 0;
-        }
-        .bloc{
-            display: block;
-            margin: auto;
-            width: 230px;
-            .title{
-                font-size: 48px;
-                padding: 0 0 5% 0;
-                .spantitle{
-                    font-size: 68px;
-                   
-                }
-            }
-            .explorePlus{
-                font-size: 20px;
-            }
-            .explore{
-                display: flex;
-                padding: 30% 0 5% 0;
-                justify-content: space-between;
-                max-width: 230px;
-                .exploreTitle{
-                    font-size: 24px;
-                }
-                .exploreGo{
-                    width: 56px;
-                }
-            }
-        }
-        
+section {
+    width: 100%;
+    height: auto;
+    .inner {
+        display: flex;
     }
-    .galeries{
-        max-width: 60%;
-        .galery{
-            width: 100%;
-            min-height: 780px;
+    &.introDataVize{
+        min-width: 100vw;
+        display: flex;
+        max-height: 780px;
+        .presentation{
+            min-width: 40%;
+            .logo{
+                width: 215,44px;
+                height: 29,94px;
+                display: block;
+                margin: auto;
+                padding: 10% 0  20% 0;
+            }
+            .bloc{
+                display: block;
+                margin: auto;
+                width: 230px;
+                .title{
+                    font-size: 48px;
+                    padding: 0 0 5% 0;
+                    .spantitle{
+                        font-size: 68px;
+
+                    }
+                }
+                .explorePlus{
+                    font-size: 20px;
+                }
+                .explore{
+                    display: flex;
+                    padding: 30% 0 5% 0;
+                    justify-content: space-between;
+                    max-width: 230px;
+                    .exploreTitle{
+                        font-size: 24px;
+                    }
+                    .exploreGo{
+                        width: 56px;
+                    }
+                }
+            }
+
+        }
+        .galeries{
+            max-width: 60%;
+            .galery{
+                width: 100%;
+                min-height: 780px;
+            }
+        }
+    }
+
+    &.section3 {
+        background-color: #F6F6F6;
+        position: relative;
+        .inner {
+            .container-first {
+                width:calc(40% - 80px);
+                img {
+                    margin: 4% 0 4% 8%;
+                }
+            }
+            .container-second {
+                width: 60%;
+                text-align: left;
+                margin-top: 80px;
+                font-family: sans-serif;
+                p {
+                    font-size: 1rem;
+                    background-color: #FFFFFF;
+                    padding: 32px;
+                    line-height: 26px;
+                    margin-top: 38px;
+                }
+                &_description {
+                    display:inline-block;
+                    position: relative;
+                    z-index: 2;
+                    width: 60%;
+                    line-height: 1.2;
+                    h2:after {
+                        content: "";
+                        background: #CF2933;
+                        height: 5px;
+                        width: 85px;
+                        display:inline-block;
+                        margin-left: 5px;
+                    }
+                    h3 {
+                        font-size: 16px;
+                    }
+                    .title {
+                        font-size: 43px;
+                    }
+                }
+            }
+            img.ecurie {
+                position: absolute;
+                right: 0;
+                bottom: -75px;
+            }
         }
     }
 }
-
-.def{
+.def {
     height: 300px;
     background-image: url("../images/background.png");
     color: white;
-    
-.par{
-    margin: 0 auto;
-    width: 65%;
-    text-align: center;
+
+    .par {
+        margin: 0 auto;
+        width: 65%;
+        text-align: center;
     .text{
         padding: 0% 0px 27px 0;
         font-size: 17px;
