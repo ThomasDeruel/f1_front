@@ -99,6 +99,9 @@ section {
                 &--01 {
                     margin-top: 0;
                 }
+                img {
+                    box-shadow: 1px 1px 8px black;
+                }
             }
             &_btn {
                 bottom: 100px;
