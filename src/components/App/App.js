@@ -5,8 +5,8 @@ import { MenuContext } from '../../helpers/context/menu-context';
 import '../../styles/scss/App.scss';
 //Containers
 import HomeContainer from "../../views/Home/Home";
-import CircuitsContainer from '../../views/Circuits/Circuits';
-import ConstructorsContainer from '../../views/Constructors/Constructors';
+import Pilots from '../../views/Pilots/Pilots';
+import Ecurie from '../../views/Ecurie/Ecurie';
 
 //Styles
 import './App.css';
@@ -24,8 +24,8 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={HomeContainer} />
-            <Route path="/circuits" component={CircuitsContainer} />
-            <Route path="/constructors" component={ConstructorsContainer} />
+            <Route path="/pilots" component={Pilots} />
+            <Route path="/ecurie" component={Ecurie} />
           </Switch>
         </Router>
       </MenuContext.Provider>
