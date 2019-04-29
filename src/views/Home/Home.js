@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 // IMPORT IMG
 import logo from '../../styles/images/logo.png';
@@ -77,7 +78,7 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
         </div>
       </section>
 
-        {/* SECTION ECURIE */}
+    {/* SECTION ECURIE */}
       <section className={'section3'}>
         <div className={'inner'}>
             <div className={'container-first'}>
@@ -93,13 +94,16 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
                         These beauty tips include simple suggestions such as getting enough sleep each night, drinking plenty of water each day and
                         completely removing your makeup each night.
                     </p>
-                    <BtnHome/>
+                    <Link to={'/Ecurie'}>
+                        <BtnHome/>
+                    </Link>
                 </div>
                 <img className={'ecurie'} src={bgEcurie} alt=""/>
             </div>
         </div>
       </section>
-        {/* SECTION PILOTES */}
+
+    {/* SECTION PILOTES */}
         <section className="section4">
             <div className="inner">
                 <div className="container-title">
@@ -120,6 +124,11 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
                         <img src={pilots02} alt="bg-pilots-02"/>
                         <img src={pilots03} alt="bg-pilots-03"/>
                     </div>
+                    <Link to={'/pilots'}>
+                        <div className={'container-pilots_btn'}>
+                            <BtnHome />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </section>
