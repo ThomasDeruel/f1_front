@@ -4,10 +4,12 @@ import '../../styles/scss/components/Btn/Btn.scss';
 
 const BtnHome = () => {
     return (
-        <button>
-            <span>DISCOVER</span>
-            <img src={arrow} alt="picto-arrow"/>
-        </button>
+        <div>
+            <button className={'BtnHome-container'}>
+                <span className={'BtnHome-container_text'}>DISCOVER</span>
+                <img src={arrow} alt="picto-arrow" className={'BtnHome-container_arrow'}/>
+            </button>
+        </div>
     )
 };
 
