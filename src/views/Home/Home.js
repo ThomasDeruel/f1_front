@@ -5,9 +5,10 @@ import {Link} from 'react-router-dom';
 import logo from '../../styles/images/logo.png';
 import flesh from '../../styles/images/flesh.png';
 import galery from '../../styles/images/galery.png';
-import Section2 from '../../styles/images/Section2.png';
-import Section3 from '../../styles/images/Section3.png';
-import Section1 from '../../styles/images/Section1.png';
+import bgLine from '../../styles/images/f1-h-section2-bg-line.svg';
+import s2Img01 from '../../styles/images/f1-h-section2-img01.jpg';
+import s2Img02 from '../../styles/images/f1-h-section2-img02.jpg';
+import s2Img03 from '../../styles/images/f1-h-section2-img03.jpg';
 import graph1 from '../../styles/images/f1-h-section3-bg-graph01.png';
 import graph2 from '../../styles/images/f1-h-section3-bg-graph02.png';
 import bgEcurie from '../../styles/images/f1-h-section3-img-ecurie.png';
@@ -60,21 +61,33 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
                </p>
         </div>
       </div>
-      <section>
+
+    {/* SECTION DATAVIZ */}
+      <section className={'section2'}>
         <div style={{ padding: "3% 0 1% 0" }}>
           <TitleDataVize />
         </div>
         <p className={'slogan'}>LAISSEZ-VOUS CONDUIRE A TRAVERS NOS SUGGESTION</p>
-        <div>
-          <div>
-            <img src={Section1} alt={'bg-section1'}/>
-          </div>
-          <div>
-            <img src={Section2} alt={'bg-section2'}/>
-          </div>
-          <div>
-            <img src={Section3} alt={'bg-section3'}/>
-          </div>
+        <div className={'container-dataviz'}>
+            <img src={bgLine} alt="" className="container-dataviz_line"/>
+            <div className={'container-dataviz_block container-dataviz_block--01'}>
+                <img src={s2Img01} alt=""/>
+                <Link to={'/'} className={'container-dataviz_btn container-dataviz_btn--first'}>
+                    <BtnHome />
+                </Link>
+            </div>
+            <div className={'container-dataviz_block container-dataviz_block--02'}>
+                <img src={s2Img02} alt=""/>
+                <Link to={'/'} className={'container-dataviz_block container-dataviz_btn--second'}>
+                    <BtnHome />
+                </Link>
+            </div>
+            <div className={'container-dataviz_block container-dataviz_block--03'}>
+                <img src={s2Img03} alt=""/>
+                <Link to={'/'} className={'container-dataviz_btn container-dataviz_btn--third'}>
+                    <BtnHome />
+                </Link>
+            </div>
         </div>
       </section>
 
