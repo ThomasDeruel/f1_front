@@ -1,0 +1,14 @@
+
+a {
+    position:relative;
+}
+a.active:after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left:50%;
+    transform:translate(-50%);
+    width:50%;
+    height: 3px;
+    background: red;
+}

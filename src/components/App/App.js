@@ -5,7 +5,7 @@ import { MenuContext } from '../../helpers/context/menu-context';
 import '../../styles/scss/App.scss';
 //Containers
 import HomeContainer from "../../views/Home/Home";
-import NavBar from "../../components/NavBar";
+
 import Pilots from '../../views/Pilots/Pilots';
 import Ecurie from '../../views/Ecurie/Ecurie';
 
@@ -26,7 +26,7 @@ const App = () => {
       <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
         <Router>
           <Switch>
-            <NavBar/>
+            {/*<NavBar/>*/}
             <Route exact path="/" component={HomeContainer} />
             <Route path="/pilots" component={Pilots} />
             <Route path="/ecurie" component={Ecurie} />
