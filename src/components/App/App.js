@@ -7,6 +7,7 @@ import '../../styles/scss/App.scss';
 import HomeContainer from "../../views/Home/Home";
 import CircuitsContainer from '../../views/Circuits/Circuits';
 import ConstructorsContainer from '../../views/Constructors/Constructors';
+import PilotesContainer from '../../views/Pilotes/Pilotes';
 
 //Styles
 import './App.css';
