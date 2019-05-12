@@ -1,9 +1,18 @@
 import React from "react";
-import fonts from "../styles/fonts";
+import {formulaFonts} from "../styles/fonts";
 
 import { NavLink } from "react-router-dom";
 
-const links = ["pilots","ecurie"];
+const links = [
+    {
+        path: "/pilots",
+        name: "pilotes"
+    },
+    {
+        path: "/ecurie",
+        name: "ecuries"
+    }
+]
 
 const NavBar =  () => {
     return(
@@ -12,11 +21,11 @@ const NavBar =  () => {
             return (
                 <NavLink
                 key={id}
-                to={`/${link}`}
+                to={link.path}
                 style={basicStyle}
                 activeStyle={activeStyle}
                 >
-                {link}
+                {link.name}
                 </NavLink>
             )
         })}
@@ -29,13 +38,19 @@ const navMain = {
 }
 const basicStyle = {
     fontWeight: "bold",
-    color: "green",
-    fontFamily: fonts.bold
+    fontFamily: formulaFonts.bold,
+    marginRight: "32px",
+    textTransform: "Uppercase",
+    color: "black",
+    opacity: 0.5,
+    listStyleType: "none",
+    textDecoration: "none",
 }
 
 const activeStyle = {
     fontWeight: "bold",
-    color: "red"
+    color: "red",
+    opacity: 1
 }
 
 export default NavBar;

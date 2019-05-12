@@ -1,5 +1,5 @@
-const fonts = {
-    bold: "Formula Bold"
+export const formulaFonts = {
+    bold: "Formula Bold",
+    regular: "Formula Regular",
+    wide: "Formula Wide",
 }
-
-export default fonts;
