@@ -8,11 +8,12 @@ import HomeContainer from "../../views/Home/Home";
 
 import Pilots from '../../views/Pilots/Pilots';
 import Ecurie from '../../views/Ecurie/Ecurie';
+import NavBar from '../../components/NavBar';
 
 //Styles
 import './App.css';
-import '../../styles/reset.css';
-import '../../styles/fonts.css';
+import '../../styles/css/reset.css';
+import '../../styles/css/fonts.css';
 
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
       <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
         <Router>
           <Switch>
-            {/*<NavBar/>*/}
+            <NavBar/>
             <Route exact path="/" component={HomeContainer} />
             <Route path="/pilots" component={Pilots} />
             <Route path="/ecurie" component={Ecurie} />

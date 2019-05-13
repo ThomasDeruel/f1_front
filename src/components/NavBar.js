@@ -1,7 +1,7 @@
 import React from "react";
-import {formulaFonts} from "../../styles/fonts";
+import {formulaFonts} from "../styles/fonts";
 import { NavLink } from "react-router-dom";
-import './navbar.css';
+import '../styles/css/navbar.css';
 
 const links = [
     {

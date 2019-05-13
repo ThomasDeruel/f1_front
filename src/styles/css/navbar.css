@@ -2,13 +2,17 @@
 a {
     position:relative;
 }
-a.active:after {
+a:after {
     content: '';
     position: absolute;
     bottom: -12px;
     left:50%;
     transform:translate(-50%);
-    width:50%;
+    width:0%;
     height: 3px;
     background: red;
+    transition: all 200ms ease;
+}
+a.active:after {
+    width:50%;
 }
