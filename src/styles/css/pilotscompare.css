@@ -1,0 +1,6 @@
+.pilotsCompareContainer {
+    display:flex;
+    justify-content: space-between;
+    min-height: calc(100vh - 41px);
+    width: 100%;
+}

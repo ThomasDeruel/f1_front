@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import PilotsCompare from '../../components/PilotsCompare';
+import '../../styles/css/pilotscontainer.css';
 
-const Pilots = () => {
+const PilotsContainer = () => {
+    const [year,setYear] = useState(2017);
     return (
-        <p>Pilots</p>
+        <PilotsCompare year={year}/>
     )
 }
 
-export default Pilots;
+export default PilotsContainer;

@@ -26,8 +26,8 @@ const App = () => {
     <div className="App">
       <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
         <Router>
+        <NavBar/>
           <Switch>
-            <NavBar/>
             <Route exact path="/" component={HomeContainer} />
             <Route path="/pilots" component={Pilots} />
             <Route path="/ecurie" component={Ecurie} />

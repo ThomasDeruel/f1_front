@@ -1,0 +1,84 @@
+.dataPilotContainer {
+    position: relative;
+    width: 45%;
+    min-width: 680px;
+    min-height: 100%;
+    overflow: hidden;
+}
+.dataPilotContainer-header-flex {
+    display:flex;
+    position: relative;
+    z-index: 999;
+    width:100%;
+    justify-content: flex-end;
+    color:#CF2933;
+    height: 90px;
+    padding-bottom: 20px;
+}
+
+
+.dataPilotContainer-header-item {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.dataPilotContainer-header-item:after {
+    content:'';
+    width: 72px;
+    height: 2px;
+    background: #CF2933;
+    position:absolute;
+    left:0;
+    bottom: -14px;
+}
+
+.dataPilotContainer-header-item h3 {
+    font-family: "Formula Bold";
+    width:205px;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.dataPilotContainer-header-item img {
+    width: auto;
+    max-height: 70px;
+}
+.dataPilotContainer-background {
+    position:absolute;
+    z-index:0;
+    width:auto;
+    left: -20%;
+    top: 20%;
+}
+
+.dataPilotContainer-background img {
+    width: auto;
+}
+
+.dataListContainer {
+    width: 100%;
+}
+
+.dataPilotContainer-data-flex {
+    margin-top: 20px;
+    position: relative;
+    z-index: 999;
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.dataPilotContainer-data {
+    width: 50%;
+}
+
+.dataPilotContainer-ecurieTitle {
+    font-family:'Formula Regular';
+}
+.dataPilotContainer-ecurieTitle span {
+    font-family:'Formula Bold';
+}
