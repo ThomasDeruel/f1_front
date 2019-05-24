@@ -19,9 +19,9 @@ const DataPilot = ({year}) =>{
                     Ecurie <span>FERRARIE</span>
                 </p>
                 <div className="dataListContainer">
-                    <ShowData icon="victoire" data="240"/>
-                    <ShowData icon="victoire" data="250"/>
-                    <ShowData icon="victoire" data="240"/>
+                    <ShowData icon="trophy" data={{name:"Score", value:"250"}}/>
+                    <ShowData icon="timer" data={{name:"Cumulés", value:"250"}}/>
+                    <ShowData icon="speed" data={{name:"Vitesse", value:"250"}}/>
                 </div>
             </div>
         </div>
@@ -32,9 +32,4 @@ const DataPilot = ({year}) =>{
     )
 }
 
-const userName = (name) => {
-    return (
-        <p className="dataPilotContainer-ecurieTitle">Ecurie <span>FERRARIE</span></p>
-    )
-}
 export default DataPilot;

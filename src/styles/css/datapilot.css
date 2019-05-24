@@ -10,6 +10,7 @@
     position: relative;
     z-index: 999;
     width:100%;
+    margin-top: 40px;
     justify-content: flex-end;
     color:#CF2933;
     height: 90px;
@@ -51,8 +52,8 @@
     position:absolute;
     z-index:0;
     width:auto;
-    left: -20%;
-    top: 20%;
+    left: -10%;
+    top: 5%;
 }
 
 .dataPilotContainer-background img {
@@ -60,11 +61,12 @@
 }
 
 .dataListContainer {
-    width: 100%;
+    width: calc(100% - 48px);
+    margin-left: 48px;
 }
 
 .dataPilotContainer-data-flex {
-    margin-top: 20px;
+    margin-top: 32px;
     position: relative;
     z-index: 999;
     width:100%;
@@ -78,6 +80,7 @@
 
 .dataPilotContainer-ecurieTitle {
     font-family:'Formula Regular';
+    margin-bottom: 48px;
 }
 .dataPilotContainer-ecurieTitle span {
     font-family:'Formula Bold';

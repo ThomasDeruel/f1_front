@@ -6,24 +6,33 @@ const ShowData = ({icon,data}) => {
     return (
     <li style={listItem}>
         <img style={iconStyle} src={require(`../assets/img/${icon}.svg`)} alt="icon data"/>
-        <p style={dataStyle}>{data}</p>
+        <p style={dataName}>{data.name}</p>
+        <p style={dataStyle}>{data.value}</p>
     </li>
     )
 }
 
 const listItem = {
     display: 'flex',
-    justifyContent: 'space-between',
     width: '100%',
+    marginBottom: '24px',
+    alignItems: 'center'
 }
 const iconStyle = {
     width: '25px',
     height: '25px'
 }
-
+const dataName = {
+    textAlign: 'left',
+    fontFamily: formulaFonts.regular,
+    width: '116px',
+    marginLeft: '48px',
+    textAlign:' left'
+}
 const dataStyle = {
-    fontFamily: formulaFonts.wide,
-    fontSize: "24px",
+    fontFamily: formulaFonts.bold,
+    fontSize: "16px",
+    color: '#CF2933'
 }
 
 export default ShowData;

@@ -14,6 +14,7 @@ import NavBar from '../../components/NavBar';
 import './App.css';
 import '../../styles/css/reset.css';
 import '../../styles/css/fonts.css';
+import NavBarScroll from "../NavBarScroll/NavBarScroll";
 
 
 const App = () => {
@@ -26,7 +27,8 @@ const App = () => {
     <div className="App">
       <MenuContext.Provider value={{ menuOpen, setMenuOpen }}>
         <Router>
-        <NavBar/>
+          <NavBarScroll/>
+          <NavBar/>
           <Switch>
             <Route exact path="/" component={HomeContainer} />
             <Route path="/pilots" component={Pilots} />

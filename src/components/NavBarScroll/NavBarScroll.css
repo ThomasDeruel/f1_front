@@ -1,0 +1,36 @@
+.menu-item {
+  font-size: 60px;
+  font-family: "Formula Regular";
+  padding: 40px 40px 15px 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 200ms ease;
+}
+.menu-item-wrapper {
+  outline: none;
+  margin-bottom: 20px;
+}
+.menu-item.active {
+  color: #CF2933;
+}
+.menu-item.active:after {
+  width: 50%;
+}
+
+.menu-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  transform:translate(-50%);
+  width:0%;
+  height: 3px;
+  background: #CF2933;
+  transition: all 200ms ease;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
