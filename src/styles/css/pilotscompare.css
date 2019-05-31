@@ -1,6 +1,42 @@
 .pilotsCompareContainer {
     display:flex;
     justify-content: space-between;
-    min-height: calc(100vh - 41px);
+    min-height: calc(100vh - 186px);
     width: 100%;
+    overflow:hidden;
+}
+
+.PilotColumnItemContainer:before{
+    content:'Comparez';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255, 0, 0, 0.685);
+    z-index: 99999999;
+    font-size: 40px;
+    font-family: "Formula Bold";
+}
+
+.PilotColumnItemContainer:hover:before {
+    content:'Comparé';
+    display:none;
+    background:blue;
+}
+@keyframes test {
+    0%{opacity:1}
+    50%{opacity:1}
+    95%{opacity:0}
+    100%{display:none;}
+}
+.PilotColumnItemContainer {
+    width: 40%;
+    height: calc(100vh - 186px);
+    overflow:auto;
+    position: relative;
 }

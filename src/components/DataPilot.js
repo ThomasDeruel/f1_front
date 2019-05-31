@@ -1,35 +1,38 @@
 import React, {useState} from "react";
 import ShowData from './ShowData';
+import  {convertToHours} from '../helpers/functions/functions';
 import '../styles/css/datapilot.css';
 
-const DataPilot = ({year}) =>{
-    
+const DataPilot = ({year,data, mustBeLeft}) =>{
 
     return (
     <section className="dataPilotContainer">
-        <div className="dataPilotContainer-header-flex">
+        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-header-flex">
             <div className="dataPilotContainer-header-item">
-                <h3>sebastian Vettel</h3>
+                <h3>{data.pilotname}</h3>
                 <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
             </div>
         </div>
-        <div className="dataPilotContainer-data-flex">
+        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-data-flex">
             <div className="dataPilotContainer-data">
                 <p className="dataPilotContainer-ecurieTitle">
                     Ecurie <span>FERRARIE</span>
                 </p>
                 <div className="dataListContainer">
-                    <ShowData icon="trophy" data={{name:"Score", value:"250"}}/>
-                    <ShowData icon="timer" data={{name:"Cumulés", value:"250"}}/>
-                    <ShowData icon="speed" data={{name:"Vitesse", value:"250"}}/>
+                    <ShowData icon="trophy" data={{name:"Score", value:data.victory}}/>
+                    <ShowData icon="timer" data={{name:"Cumulés", value:convertToHours(data.cumulativeTime)}}/>
+                    <ShowData icon="speed" data={{name:"Vitesse", value:data.averageTspeed}}/>
                 </div>
             </div>
         </div>
-        <div className="dataPilotContainer-background">
+        <div style={mustBeLeft ? {left: '-10%'} : {left: '50%'}} className="dataPilotContainer-background">
             <img src={require("../assets/img/sebastian-vettle.png")} alt="pilot face"/>
         </div>
     </section>
     )
 }
 
+const LeftOrRight = (mustBeLeft) => {
+    return mustBeLeft ? {justifyContent: 'flex-end'} : {justifyContent: 'flex-start'}
+}
 export default DataPilot;
