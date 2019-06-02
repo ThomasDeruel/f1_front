@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DataPilot from "./DataPilot";
 import PilotColumnItem from './PilotColumnItem/PilotColumnItem';
+import Radar from './Radar/Radar';
 import '../styles/css/pilotscompare.css';
 
 const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
@@ -8,40 +9,47 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
     /**
      * data-> must be replace (must be a props)
      */
-    const firstPilot = 
-    {
-        pilotname:'jean pierre',
-        rank: 2,
-        victory: 9,
-        ecury: 'Mercedess',
+    const firstPilot = {
+        forename:'jean',
+        surename:'pierre',
+        position: 2,
+        score: 9,
+        mediumGrid:3,
+        constructor: 'Mercedess',
         origin: 'france',
         cumulativeTime: 1559228168,
         averageTspeed: 254,
     }
     const data = [
         {
-            pilotname:'jean pierre',
-            rank: 2,
-            victory: 9,
-            ecury: 'Mercedess',
+            forename:'jean',
+            surename:'pierre',
+            position: 2,
+            score: 9,
+            mediumGrid:3,
+            constructor: 'Mercedess',
             origin: 'france',
             cumulativeTime: 1559228168,
             averageTspeed: 254,
         },
         {
-            pilotname:'Meh euh',
-            rank: 5,
-            victory: 7,
-            ecury: 'ecury 2',
+            forename:'Meh',
+            surename:'euh',
+            position: 5,
+            score: 7,
+            mediumGrid:4,
+            constructor: 'ecury 2',
             origin: 'france',
             cumulativeTime: 1559228168,
             averageTspeed: 254,
         },
         {
-            pilotname:'Cail Jean',
-            rank: 1,
-            victory: 7,
-            ecury: 'ecury 3',
+            forename:'Cail',
+            surename:'Jean',
+            position: 1,
+            score: 7,
+            mediumGrid:5,
+            constructor: 'ecury 3',
             origin: 'france',
             cumulativeTime: 1559228168,
             averageTspeed: 254,
@@ -53,17 +61,21 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
             <DataPilot data={firstPilot} mustBeLeft={true} year={year}/>
             
             {secondPilot !== null && (
-            <div className="radar-container">
-                radar
-            </div>
+                <Radar 
+                labels={['points', 'temps', 'position départ', 'position arrivé']}
+                keys={['score','cumulativeTime','mediumGrid','position']}
+                data={[firstPilot,secondPilot]}
+                allValues={data}
+                />
             )}
             {secondPilot !== null ?
-            <DataPilot data={secondPilot} mustBeLeft={false} year={year}/>:
-            <section className="PilotColumnItemContainer">
-                {data.map(pilot=>(
-                    <PilotColumnItem data={pilot} secondPilot={secondPilot} setSecondPilot={setSecondPilot }/>
-                ))}
-            </section>
+                <DataPilot data={secondPilot} mustBeLeft={false} year={year}/>
+            :
+                <section className="PilotColumnItemContainer">
+                    {data.map(pilot=>(
+                        <PilotColumnItem data={pilot} secondPilot={secondPilot} setSecondPilot={setSecondPilot }/>
+                    ))}
+                </section>
             }
             
         </section>
