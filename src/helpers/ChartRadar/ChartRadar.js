@@ -7,7 +7,7 @@ class ChartRadar{
     dataSets;
 
     constructor(chart,labels, dataSets, ...arg){
-        if(arg.length === 1) {
+        if(arg.length === 1 ) {
             this.setOption(arg[0]);
         }
         this.setCtx(chart);
