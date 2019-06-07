@@ -5,7 +5,7 @@ import NavBarScroll from "../../components/NavBarScroll/NavBarScroll";
 import './Pilots.scss';
 
 
-
+import Api from '../../helpers/api/Api' ;
 
 class Pilots extends Component {
     constructor(props) {
@@ -15,8 +15,9 @@ class Pilots extends Component {
         this.a = 2010;
     }
 
-    componentWillMount() {
-
+    async componentWillMount() {
+        await Api.getDefaultPilots();
+        
         let gallery = this.state.gallery;
         fetch('http://142.93.104.14/api/summary_seasons?year=2018')
             .then((result) => {
