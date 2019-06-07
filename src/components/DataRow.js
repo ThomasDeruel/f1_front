@@ -3,7 +3,7 @@ import ShowData from './ShowData';
 import  {convertToHours} from '../helpers/functions/functions';
 import '../styles/css/datapilot.css';
 
-const DataPilot = ({year,data, mustBeLeft}) =>{
+const DataRow = ({year,data, mustBeLeft}) =>{
 
     return (
     <section className={`dataPilotContainer ${mustBeLeft ? 'isLeft' :''}`}>
@@ -56,4 +56,4 @@ const rowReverse = (mustBeLeft) =>{
 
 
 
-export default DataPilot;
+export default DataRow;

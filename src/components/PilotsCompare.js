@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DataPilot from "./DataPilot";
+import DataRow from "./DataRow";
 import PilotColumnItem from './PilotColumnItem/PilotColumnItem';
 import Radar from './Radar/Radar';
 import '../styles/css/pilotscompare.css';
@@ -58,7 +58,7 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
     return (
         <section className="pilotsCompareContainer">
 
-            <DataPilot data={firstPilot} mustBeLeft={true} year={year}/>
+            <DataRow data={firstPilot} mustBeLeft={true} year={year}/>
             
             {secondPilot !== null && (
                 <Radar 
@@ -69,7 +69,7 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
                 />
             )}
             {secondPilot !== null ?
-                <DataPilot data={secondPilot} mustBeLeft={false} year={year}/>
+                <DataRow data={secondPilot} mustBeLeft={false} year={year}/>
             :
                 <section className="PilotColumnItemContainer">
                     {data.map(pilot=>(
