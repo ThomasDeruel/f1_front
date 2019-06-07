@@ -5,7 +5,7 @@ import NavBarScroll from "../../components/NavBarScroll/NavBarScroll";
 import './Pilots.scss';
 
 
-
+import Api from '../../helpers/api/Api' ;
 
 class Pilots extends Component {
     constructor(props) {
@@ -15,75 +15,22 @@ class Pilots extends Component {
         this.a = 2010;
     }
 
-    componentWillMount() {
-
-        let gallery = this.state.gallery;
-        fetch('http://142.93.104.14/api/summary_seasons?year=2018')
-            .then((result) => {
-
-                return result.json();
-            }).then((jsonResult) => {
-                var tab = jsonResult['hydra:member'];
-                for (let i = 0; i < tab.length; i++) {
-                    let tt = tab[i].constructor.name;
-                    let p = tab[i].driver;
-
-                    let entry = tab[i].driver;
-                    entry.constructor = tab[i].constructor.name;
-                    entry.fastestLapSpeed = tab[i].fastestLapSpeed;
-                    entry.mediumGrid = tab[i].mediumGrid;
-                    entry.position = tab[i].position;
-                    entry.score = tab[i].score;
-                    entry.wins = tab[i].wins;
-                    //Object.assign(entry, { constructor: tab[i].constructor.name });
-
-                    gallery.push(entry);
-                }
-                //console.log(a.length);
-                this.setState({ gallery });
-            })
-
+    async componentWillMount() {
+       
+        const gallery = await Api.getDefaultPilots();
+        this.setState({ gallery });          
     }
 
-    changeColor = (data) => {
+    async changeColor(data){
 
         this.setState({
             selected: data
         });
 
-
-        let gallery = [];
-        fetch('http://142.93.104.14/api/summary_seasons?year=' + this.state.selected)
-            .then((result) => {
-
-                return result.json();
-            }).then((jsonResult) => {
-                var tab = jsonResult['hydra:member'];
-                for (let i = 0; i < tab.length; i++) {
-                    let tt = tab[i].constructor.name;
-                    let p = tab[i].driver;
-
-                    let entry = tab[i].driver;
-                    entry.constructor = tab[i].constructor.name;
-                    entry.fastestLapSpeed = tab[i].fastestLapSpeed;
-                    entry.mediumGrid = tab[i].mediumGrid;
-                    entry.position = tab[i].position;
-                    entry.score = tab[i].score;
-                    entry.wins = tab[i].wins;
-                    //Object.assign(entry, { constructor: tab[i].constructor.name });
-
-                    gallery.push(entry);
-                }
-                //console.log(a.length);
-                if (gallery) {
-                    this.setState({ gallery });
-                }
-            })
-
-
-
-
-
+        const gallery = await Api.getDefaultPilots();
+        if (gallery) {
+            this.setState({ gallery });
+        }
     }
 
 
