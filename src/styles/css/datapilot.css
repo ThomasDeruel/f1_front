@@ -1,10 +1,14 @@
 .dataPilotContainer {
     position: relative;
-    width: 40%;
+    width: 35%;
     min-width: 680px;
     min-height: 100%;
     overflow: hidden;
 }
+.dataPilotContainer.isLeft .dataPilotContainer-header-flex  {
+    justify-content: end;
+}
+
 .dataPilotContainer-header-flex {
     display:flex;
     position: relative;
@@ -14,30 +18,38 @@
     color:#CF2933;
     height: 90px;
     padding-bottom: 20px;
+    justify-content: flex-start;
 }
 
 
+.dataPilotContainer.isLeft .dataPilotContainer-header-item {
+    flex-direction: row;
+}
 .dataPilotContainer-header-item {
     display: flex;
     width: 50%;
     justify-content: space-between;
     position: relative;
     align-items: center;
+    flex-direction: row-reverse;
 }
+.dataPilotContainer.isLeft .dataPilotContainer-header-item:after  {
 
+    left:0;
+}
 .dataPilotContainer-header-item:after {
     content:'';
     width: 72px;
     height: 2px;
     background: #CF2933;
     position:absolute;
-    left:0;
+    left:100%;
     bottom: -14px;
 }
 
 .dataPilotContainer-header-item h3 {
     font-family: "Formula Bold";
-    width:205px;
+    width:20px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -70,16 +82,32 @@
     z-index: 999;
     width: 100%;
     display:flex;
+    justify-content: flex-start;
+
+}
+.dataPilotContainer.isLeft .dataPilotContainer-data-flex {
+    justify-content: flex-end;
 }
 
 .dataPilotContainer-data {
     width: 50%;
 }
-
+.dataPilotContainer.isLeft .dataPilotContainer-ecurieTitle {
+    display: block;
+    width: 100%;
+    font-family:'Formula Regular';
+}
 .dataPilotContainer-ecurieTitle {
     font-family:'Formula Regular';
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 122%;
 }
+
+
 .dataPilotContainer-ecurieTitle span {
     font-family:'Formula Bold';
+    order:-1;
+    margin-left:8px;
 }

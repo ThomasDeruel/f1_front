@@ -1,5 +1,7 @@
 import React, {useEffect, useRef} from "react";
 import ChartRadar from '../../helpers/ChartRadar/ChartRadar';
+import './radar.css';
+
 const Radar = ({labels, keys, data, allValues}) => {
     
     const chart = useRef("chart");
@@ -8,13 +10,15 @@ const Radar = ({labels, keys, data, allValues}) => {
 
       const scale = scaling(keys,allValues);
 
-      const datasets = data.map(pilot=>{
+      const datasets = data.map((pilot,i)=>{
+        const {backgroundColor} = radarStyle[i];
+
         return {
           label: `${pilot.forename} ${pilot.surename}`,
           data:keys.map(key=>{
-
           return (pilot[key]/scale[key])*100;
-          })
+          }),
+          backgroundColor,
         }
       })
       new ChartRadar(
@@ -44,9 +48,12 @@ function scaling(keys,allValues){
       return scaling;
 }
 
-function style(){
-  return {
-    pointRotation:9
+const radarStyle= [
+  {
+    backgroundColor:'rgba(200,0,0,0.4)'
+  },
+  {
+     backgroundColor:'rgba(0,0,200,0.4)'
   }
-}
+]
 export default Radar;

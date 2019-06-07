@@ -6,14 +6,14 @@ import '../styles/css/datapilot.css';
 const DataPilot = ({year,data, mustBeLeft}) =>{
 
     return (
-    <section className="dataPilotContainer">
-        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-header-flex">
+    <section className={`dataPilotContainer ${mustBeLeft ? 'isLeft' :''}`}>
+        <div className="dataPilotContainer-header-flex">
             <div className="dataPilotContainer-header-item">
                 <h3>{`${data.forename} ${data.surename}`}</h3>
                 <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
             </div>
         </div>
-        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-data-flex">
+        <div className="dataPilotContainer-data-flex">
             <div className="dataPilotContainer-data">
                 <p className="dataPilotContainer-ecurieTitle">
                     Ecurie <span>{data.constructor}</span>
@@ -25,16 +25,35 @@ const DataPilot = ({year,data, mustBeLeft}) =>{
                 </div>
             </div>
         </div>
-        <div style={mustBeLeft ? {left: '-10%'} : {left: '50%'}} className="dataPilotContainer-background">
+        <div style={mustBeLeft ? {left: '-20%'} : {left: '50%'}} className="dataPilotContainer-background">
             <img src={require("../assets/img/sebastian-vettle.png")} alt="pilot face"/>
         </div>
     </section>
     )
 }
-const HeaderSection = () => {
-    
+/*
+const HeaderSection = ({data,mustBeLeft}) => {
+    return (
+        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-header-flex">
+            <div className="dataPilotContainer-header-item">
+                <h3>{`${data.forename} ${data.surename}`}</h3>
+                <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
+            </div>
+        </div>
+    )
 }
-const LeftOrRight = (mustBeLeft) => {
+*/
+
+const LeftOrRight = (mustBeLeft) =>{
     return mustBeLeft ? {justifyContent: 'flex-end'} : {justifyContent: 'flex-start'}
 }
+
+const rowReverse = (mustBeLeft) =>{
+    return mustBeLeft ? {flexDirection: 'row'} : {flexDirection: 'row-reverse'}
+}
+
+
+
+
+
 export default DataPilot;
