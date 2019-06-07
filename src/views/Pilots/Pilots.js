@@ -17,8 +17,6 @@ class Pilots extends Component {
 
     async componentWillMount() {
        
-
-        //const gallery = this.state.gallery;
         const gallery = await Api.getDefaultPilots();
         this.setState({ gallery });          
     }
