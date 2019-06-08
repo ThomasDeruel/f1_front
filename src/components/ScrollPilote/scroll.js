@@ -89,7 +89,7 @@ const Scroll = (props) => {
                     >
                         <div>
 
-                            <figure class="snip0012"
+                            <figure class="snip"
                                 onClick={() => {
                                     setCurrentIndex(i.image);
                                     console.log(i + 1, url);//c'est ici que tu recuper la data que t'as besoin

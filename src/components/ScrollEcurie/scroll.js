@@ -71,7 +71,7 @@ const Scroll = (props) => {
         { name: "McLaren", url: "https://www.carlogos.org/logo/McLaren-logo-2002-2560x1440.png" },
         { name: "Renault", url: "http://tous-logos.com/wp-content/uploads/2017/07/Symbole-Renault.jpg" },
         { name: "Force India", url: "http://www.orissapost.com/wp-content/uploads/2018/09/Force_India.png" },
-        { name: "Sauber", url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFDo_A7fr0CVzAhw_wUtfeo5xSiJi1HSLQVn9hpPxl_PftVvurg" },
+        { name: "Sauber", url: "http://www.snaplap.net/wp-content/uploads/2015/03/Alfa-Romeo-Sauber-logo.jpg" },
         { name: "Williams", url: "https://i.pinimg.com/originals/ce/97/ed/ce97ed6be99003209de5a968f32985cc.jpg" },
         { name: "Toro Rosso", url: "https://i.wheelsage.org/pictures/toro_rosso/logotypes/autowp.ru_toro_rosso_logo_2.jpg" },
         { name: "Haas F1 Team", url: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo_Haas_F1.png" },
