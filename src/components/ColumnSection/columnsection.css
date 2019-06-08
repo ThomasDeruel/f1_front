@@ -1,0 +1,16 @@
+.ColumnSectionContainer {
+    margin-right: 40px;
+}
+
+.ColumnSectionContainer h3 {
+    margin-bottom: 22px;
+    text-align: center;
+    font-family: 'Formula Regular';
+    font-size: 12px;
+}
+
+.ColumnSectionContainer-value{
+    font-family: 'Formula Bold';
+    font-size: 16px;
+    text-align:center;
+}

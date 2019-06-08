@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Scroll from '../../components/ScrollPilote/scroll';
 import NavBar from '../../components/NavBar';
 import NavBarScroll from "../../components/NavBarScroll/NavBarScroll";
+import DataCompare from '../../components/DataCompare/DataCompare';
 import './Pilots.scss';
-
+import '../../styles/css/pilotscontainer.css';
 
 import Api from '../../helpers/api/Api' ;
 
@@ -50,9 +51,10 @@ class Pilots extends Component {
                     galery={this.state.gallery}
 
                 />
+                <DataCompare year={2017}/>
             </div >
         )
     }
 }
 
-export default Pilots;
+export default PilotsContainer;
