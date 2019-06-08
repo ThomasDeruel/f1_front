@@ -6,9 +6,9 @@ import DataCompare from '../../components/DataCompare/DataCompare';
 import './Pilots.scss';
 import '../../styles/css/pilotscontainer.css';
 
-import Api from '../../helpers/api/Api' ;
+import Api from '../../helpers/api/Api';
 
-class Pilots extends Component {
+class PilotsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = { gallery: [], selected: '' };
@@ -17,18 +17,18 @@ class Pilots extends Component {
     }
 
     async componentWillMount() {
-       
+
         const gallery = await Api.getDefaultPilots();
-        this.setState({ gallery });          
+        this.setState({ gallery });
     }
 
-    async changeColor(data){
+    async changeColor(data) {
 
         this.setState({
             selected: data
         });
 
-        const gallery = await Api.getDefaultPilots();
+        const gallery = await Api.setPilots(this.state.selected);
         if (gallery) {
             this.setState({ gallery });
         }
@@ -51,7 +51,7 @@ class Pilots extends Component {
                     galery={this.state.gallery}
 
                 />
-                <DataCompare year={2017}/>
+                <DataCompare year={2017} />
             </div >
         )
     }
