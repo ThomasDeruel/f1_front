@@ -8,13 +8,13 @@ const PilotColumnItem = ({data,secondPilot,setSecondPilot}) => {
     return (
             <div onClick={()=>setSecondPilot(secondPilot = data)} className="PilotColumnItemContainer-flex">
                 <div className="PilotColumnItemContainer-personalDataContainer">
-                    <img className="PilotColumnItemContainer-imgContainer" src="https://www.countryflags.io/fr/flat/24.png" alt="logo ecurie"/>
+                    <img className="PilotColumnItemContainer-imgContainer" src="https://www.countryflags.io/fr/flat/24.png" alt="logo flag"/>
                     <h2>{`${data.forename} ${data.surename}`} </h2>
                     <p className="PilotColumnItemContainer-ecurie">{data.constructor}</p>
                     <span className="PilotColumnItemContainer-rank">{data.rank}</span>
                 </div>
                 <div className="PilotColumnItemContainer-personalDataContainer-img">
-                    <img src={require('../../assets/img/mercedes.svg')}/>
+                    <img src={require('../../assets/img/mercedes.svg')} alt="logo constructor" />
                 </div>
                 <div className="PilotColumnItemContainer-ColumnSectionContainer">
                     <ColumnSection type="Victoire" value={data.score}/>

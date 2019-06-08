@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-import PilotsCompare from '../../components/PilotsCompare';
+import React from 'react';
+import DataCompare from '../../components/DataCompare/DataCompare';
 import '../../styles/css/pilotscontainer.css';
 
 const PilotsContainer = () => {
-    const [year,setYear] = useState(2017);
     return (
-        <PilotsCompare year={year}/>
+        <DataCompare year={2017}/>
     )
 }
 

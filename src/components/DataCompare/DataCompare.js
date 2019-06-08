@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import DataRow from "./DataRow";
-import PilotColumnItem from './PilotColumnItem/PilotColumnItem';
-import Radar from './Radar/Radar';
-import '../styles/css/pilotscompare.css';
+import DataRow from "../DataRow";
+import PilotColumnItem from '../PilotColumnItem/PilotColumnItem';
+import Radar from '../Radar/Radar';
+import './datacompare.css';
 
-const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
+const DataCompare = ({year/*,data,firstPilot}*/}) => {
     const [secondPilot,setSecondPilot] = useState(null);
     /**
      * data-> must be replace (must be a props)
@@ -72,8 +72,12 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
                 <DataRow data={secondPilot} mustBeLeft={false} year={year}/>
             :
                 <section className="PilotColumnItemContainer">
-                    {data.map(pilot=>(
-                        <PilotColumnItem data={pilot} secondPilot={secondPilot} setSecondPilot={setSecondPilot }/>
+                    {data.map((pilot,i)=>(
+                        <PilotColumnItem 
+                        key={i+95}
+                        data={pilot} 
+                        secondPilot={secondPilot}
+                        setSecondPilot={setSecondPilot }/>
                     ))}
                 </section>
             }
@@ -82,4 +86,4 @@ const PilotsCompare = ({year/*,data,firstPilot}*/}) => {
     )
 };
 
-export default PilotsCompare; 
+export default DataCompare; 

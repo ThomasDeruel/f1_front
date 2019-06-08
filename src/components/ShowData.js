@@ -26,8 +26,7 @@ const dataName = {
     textAlign: 'left',
     fontFamily: formulaFonts.regular,
     width: '116px',
-    marginLeft: '48px',
-    textAlign:' left'
+    marginLeft: '48px'
 }
 const dataStyle = {
     fontFamily: formulaFonts.bold,

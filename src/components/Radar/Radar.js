@@ -26,7 +26,7 @@ const Radar = ({labels, keys, data, allValues}) => {
         labels,
         datasets
       )
-    }, [data])
+    }, [labels, keys, data, allValues])
 
     return (
         <div className="radar-container">

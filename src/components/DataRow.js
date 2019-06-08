@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import ShowData from './ShowData';
 import  {convertToHours} from '../helpers/functions/functions';
 import '../styles/css/datapilot.css';
@@ -31,29 +31,5 @@ const DataRow = ({year,data, mustBeLeft}) =>{
     </section>
     )
 }
-/*
-const HeaderSection = ({data,mustBeLeft}) => {
-    return (
-        <div style={LeftOrRight(mustBeLeft)} className="dataPilotContainer-header-flex">
-            <div className="dataPilotContainer-header-item">
-                <h3>{`${data.forename} ${data.surename}`}</h3>
-                <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
-            </div>
-        </div>
-    )
-}
-*/
-
-const LeftOrRight = (mustBeLeft) =>{
-    return mustBeLeft ? {justifyContent: 'flex-end'} : {justifyContent: 'flex-start'}
-}
-
-const rowReverse = (mustBeLeft) =>{
-    return mustBeLeft ? {flexDirection: 'row'} : {flexDirection: 'row-reverse'}
-}
-
-
-
-
 
 export default DataRow;
