@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import DataRow from "../DataRow";
 import PilotColumnItem from '../PilotColumnItem/PilotColumnItem';
 import Radar from '../Radar/Radar';
@@ -9,6 +9,11 @@ const DataCompare = ({year/*,data,firstPilot}*/}) => {
     /**
      * data-> must be replace (must be a props)
      */
+    useEffect(()=>{
+        document.querySelector('.pilotsCompareContainer').scrollIntoView({ 
+            behavior: 'smooth' 
+          })
+    },[])
     const firstPilot = {
         forename:'jean',
         surename:'pierre',

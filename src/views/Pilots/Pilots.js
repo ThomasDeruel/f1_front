@@ -23,10 +23,14 @@ class PilotsContainer extends Component {
         this.setState({ gallery });
         const ecuries = await Api.getDefaultEcuris();
         console.log("ecuries", ecuries);
-
-
     }
-
+    componentWillUpdate(nextProps,nextState){
+        if(this.state.firstPilot !== null && nextState.firstPilot !== this.state.firstPilot){
+            document.querySelector('.pilotsCompareContainer').scrollIntoView({ 
+                behavior: 'smooth' 
+            })
+        }
+    }
     async changeColor(data) {
         this.setState({
             selected: data
@@ -57,7 +61,7 @@ class PilotsContainer extends Component {
                     galery={this.state.gallery}
                     setFirstPilot={this.setFirstPilot}
                 />
-                {this.state.selected !== null &&
+                {this.state.firstPilot !== null &&
                 <DataCompare year={2017} />
                 }
             </div >
