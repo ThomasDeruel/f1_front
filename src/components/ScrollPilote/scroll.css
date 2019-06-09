@@ -1,5 +1,5 @@
 .scroll {
-  width  : 100%;
+  width  : 96%;
   padding: 0 0 0 42px;
 }
 
@@ -34,7 +34,7 @@
 
 .im {
   flex   : 1;
-  height : 290px;
+  height : 300px;
   width  : 300px;
   z-index: 1008;
 }

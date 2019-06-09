@@ -20,6 +20,10 @@ class PilotsContainer extends Component {
 
         const gallery = await Api.getDefaultPilots();
         this.setState({ gallery });
+        const ecuries = await Api.getDefaultEcuris();
+        console.log("ecuries", ecuries);
+
+
     }
 
     async changeColor(data) {
