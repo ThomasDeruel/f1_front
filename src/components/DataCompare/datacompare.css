@@ -4,6 +4,7 @@
     min-height: calc(100vh - 186px);
     width: 100%;
     overflow:hidden;
+    position: relative;
 }
 
 .PilotColumnItemContainer:before{

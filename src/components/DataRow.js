@@ -25,7 +25,7 @@ const DataRow = ({year,data, mustBeLeft}) =>{
                 </div>
             </div>
         </div>
-        <div style={mustBeLeft ? {left: '-20%'} : {left: '50%'}} className="dataPilotContainer-background">
+        <div style={mustBeLeft ? {left: '-13%'} : {left: '47%'}} className="dataPilotContainer-background">
             <img src={require("../assets/img/sebastian-vettle.png")} alt="pilot face"/>
         </div>
     </section>

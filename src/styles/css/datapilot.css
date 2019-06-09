@@ -62,13 +62,13 @@
 .dataPilotContainer-background {
     position:absolute;
     z-index:0;
-    width:auto;
+    width: 70%;
     left: -10%;
     top: 5%;
 }
 
 .dataPilotContainer-background img {
-    width: auto;
+    width: 100%;
 }
 
 .dataListContainer {
