@@ -11,8 +11,9 @@ import Api from '../../helpers/api/Api';
 class PilotsContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = { gallery: [], selected: '' };
+        this.state = { gallery: [], selected: null, firstPilot: null };
         this.changeColor = this.changeColor.bind(this);
+        this.setFirstPilot = this.setFirstPilot.bind(this);
         this.a = 2010;
     }
 
@@ -27,7 +28,6 @@ class PilotsContainer extends Component {
     }
 
     async changeColor(data) {
-
         this.setState({
             selected: data
         });
@@ -37,10 +37,12 @@ class PilotsContainer extends Component {
             this.setState({ gallery });
         }
     }
-
+    setFirstPilot(firstPilot){
+        this.setState({ firstPilot });
+    }
 
     render() {
-        console.log(this.state.selected)
+        console.log('ca change ',this.state)
         return (
             <div>
                 <div className="fixe-Menu">
@@ -53,9 +55,11 @@ class PilotsContainer extends Component {
                 <Scroll
                     className="scroll"
                     galery={this.state.gallery}
-
+                    setFirstPilot={this.setFirstPilot}
                 />
+                {this.state.selected !== null &&
                 <DataCompare year={2017} />
+                }
             </div >
         )
     }

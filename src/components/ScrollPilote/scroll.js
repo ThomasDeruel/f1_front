@@ -92,6 +92,7 @@ const Scroll = (props) => {
                             <figure class="snip"
                                 onClick={() => {
                                     setCurrentIndex(i.image);
+                                    props.setFirstPilot(url)
                                     console.log(i + 1, url);//c'est ici que tu recuper la data que t'as besoin
                                 }}>
                                 {
