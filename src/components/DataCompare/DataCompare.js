@@ -4,7 +4,7 @@ import PilotColumnItem from '../PilotColumnItem/PilotColumnItem';
 import Radar from '../Radar/Radar';
 import './datacompare.css';
 
-const DataCompare = ({year/*,data,firstPilot}*/}) => {
+const DataCompare = ({year,firstPilot/*,data,firstPilot}*/}) => {
     const [secondPilot,setSecondPilot] = useState(null);
     /**
      * data-> must be replace (must be a props)
@@ -14,7 +14,7 @@ const DataCompare = ({year/*,data,firstPilot}*/}) => {
             behavior: 'smooth' 
           })
     },[])
-    const firstPilot = {
+    /*const firstPilot = {
         forename:'jean',
         surename:'pierre',
         position: 2,
@@ -25,6 +25,7 @@ const DataCompare = ({year/*,data,firstPilot}*/}) => {
         cumulativeTime: 1559228168,
         averageTspeed: 254,
     }
+    */
     const data = [
         {
             forename:'jean',

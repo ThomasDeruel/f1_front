@@ -1,6 +1,5 @@
 import React from "react";
 import ShowData from './ShowData';
-import  {convertToHours} from '../helpers/functions/functions';
 import '../styles/css/datapilot.css';
 
 const DataRow = ({year,data, mustBeLeft}) =>{
@@ -9,7 +8,7 @@ const DataRow = ({year,data, mustBeLeft}) =>{
     <section className={`dataPilotContainer ${mustBeLeft ? 'isLeft' :''}`}>
         <div className="dataPilotContainer-header-flex">
             <div className="dataPilotContainer-header-item">
-                <h3>{`${data.forename} ${data.surename}`}</h3>
+                <h3>{`${data.forename} ${data.surname}`}</h3>
                 <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
             </div>
         </div>
@@ -20,8 +19,8 @@ const DataRow = ({year,data, mustBeLeft}) =>{
                 </p>
                 <div className="dataListContainer">
                     <ShowData icon="trophy" data={{name:"Score", value:data.score}}/>
-                    <ShowData icon="timer" data={{name:"Cumulés", value:convertToHours(data.cumulativeTime)}}/>
-                    <ShowData icon="speed" data={{name:"Vitesse", value:data.averageTspeed}}/>
+                    <ShowData icon="timer" data={{name:"Cumulés", value:data.cumulativeTime}}/>
+                    <ShowData icon="speed" data={{name:"Vitesse", value:data.fastestLapSpeed}}/>
                 </div>
             </div>
         </div>

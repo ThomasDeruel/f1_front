@@ -25,9 +25,10 @@ class Api {
         const response = await fetch(`http://142.93.104.14/api/summary_seasons?year=${year}`);
         const data = await response.json();
 
-        const pilots = data['hydra:member'].map((member, i) => {
+        let pilots = data['hydra:member'].map((member, i) => {
             return Api.dataMember(member, i);
         })
+
         return pilots;
     }
 
@@ -51,7 +52,8 @@ class Api {
             number: member.driver.number,
             position: member.position,
             score: member.score,
-            wins: member.wins
+            wins: member.wins,
+            cumulativeTime: member.cumulativeTime
         }
     }
 
