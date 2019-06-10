@@ -9,7 +9,7 @@ const DataRow = ({year,data, mustBeLeft}) =>{
         <div className="dataPilotContainer-header-flex">
             <div className="dataPilotContainer-header-item">
                 <h3>{`${data.forename} ${data.surname}`}</h3>
-                <img src={require("../assets/img/ferrari-emblem-50x50.png")}alt="ecurie logo"/>
+                <img src={require(`../assets/img/${constructor}`)} alt="ecurie logo"/>
             </div>
         </div>
         <div className="dataPilotContainer-data-flex">
@@ -25,7 +25,7 @@ const DataRow = ({year,data, mustBeLeft}) =>{
             </div>
         </div>
         <div style={mustBeLeft ? {left: '-13%'} : {left: '47%'}} className="dataPilotContainer-background">
-            <img src={require("../assets/img/sebastian-vettle.png")} alt="pilot face"/>
+            <img src={data.img} alt="pilot face"/>
         </div>
     </section>
     )

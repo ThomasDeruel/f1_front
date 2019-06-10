@@ -53,7 +53,8 @@ class Api {
             position: member.position,
             score: member.score,
             wins: member.wins,
-            cumulativeTime: member.cumulativeTime
+            cumulativeTime: member.cumulativeTime,
+            img: member.imgUrl
         }
     }
 
