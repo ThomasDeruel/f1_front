@@ -9,7 +9,7 @@ const DataRow = ({year,data, mustBeLeft}) =>{
         <div className="dataPilotContainer-header-flex">
             <div className="dataPilotContainer-header-item">
                 <h3>{`${data.forename} ${data.surname}`}</h3>
-                <img src={require(`../assets/img/${constructor}`)} alt="ecurie logo"/>
+                <img src={require(`../assets/img/${data.constructor}.png`)} alt="ecurie logo"/>
             </div>
         </div>
         <div className="dataPilotContainer-data-flex">
