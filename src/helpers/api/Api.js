@@ -48,13 +48,13 @@ class Api {
             surname: member.driver.surname,
             imgUrl: member.driver.imgUrl,
             mediumGrid: member.mediumGrid,
-            nationality: member.driver.nationality,
             number: member.driver.number,
             position: member.position,
             score: member.score,
             wins: member.wins,
             cumulativeTime: member.cumulativeTime,
-            img: member.imgUrl
+            img: member.driver.imgUrl,
+            nationality: member.driver.nationality.toLowerCase()
         }
     }
 

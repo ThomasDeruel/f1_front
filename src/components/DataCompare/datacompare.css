@@ -36,7 +36,7 @@
     100%{display:none;}
 }
 .PilotColumnItemContainer {
-    width: 40%;
+    width: 45%;
     height: calc(100vh - 186px);
     overflow:auto;
     position: relative;

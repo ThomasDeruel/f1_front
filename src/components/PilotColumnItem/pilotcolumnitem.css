@@ -59,6 +59,7 @@
 
 .PilotColumnItemContainer-ColumnSectionContainer {
     display:flex;
+    width: 60%;
 }
 
 .PilotColumnItemContainer-ColumnSectionFlex {
@@ -76,6 +77,6 @@
 }
 
 .PilotColumnItemContainer-personalDataContainer-img img{
-    max-height: 100%;
-    width: 100%;
+    max-height: 50px;
+    max-width: 100%;
 }

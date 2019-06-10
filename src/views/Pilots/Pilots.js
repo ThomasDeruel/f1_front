@@ -62,7 +62,9 @@ class PilotsContainer extends Component {
                     setFirstPilot={this.setFirstPilot}
                 />
                 {this.state.firstPilot !== null &&
-                <DataCompare firstPilot={this.state.firstPilot} year={2017} />
+                <DataCompare 
+                firstPilot={this.state.firstPilot}
+                data={this.state.gallery} />
                 }
             </div >
         )
