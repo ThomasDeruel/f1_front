@@ -92,6 +92,7 @@ const Scroll = (props) => {
                             <figure class="snip"
                                 onClick={() => {
                                     setCurrentIndex(i.image);
+                                    props.setFirstPilot(url)
                                     console.log(i + 1, url);//c'est ici que tu recuper la data que t'as besoin
                                 }}>
                                 {
@@ -111,7 +112,7 @@ const Scroll = (props) => {
                                 <h1 className="name aboutPilote">{url.forename || url.name} {url.surname}</h1>
 
                                 <div>
-                                    <a href="#"><i className="ion-ios-star-outline left-icon"><p>{i + 1}</p></i></a>
+                                    <a><i className="ion-ios-star-outline left-icon"><p>{i + 1}</p></i></a>
                                 </div>
                             </figure>
                         </div>

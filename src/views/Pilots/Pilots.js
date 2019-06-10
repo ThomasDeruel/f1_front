@@ -11,8 +11,9 @@ import Api from '../../helpers/api/Api';
 class PilotsContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = { gallery: [], selected: '' };
+        this.state = { gallery: [], selected: null, firstPilot: null };
         this.changeColor = this.changeColor.bind(this);
+        this.setFirstPilot = this.setFirstPilot.bind(this);
         this.a = 2010;
     }
 
@@ -22,12 +23,15 @@ class PilotsContainer extends Component {
         this.setState({ gallery });
         const ecuries = await Api.getDefaultEcuris();
         console.log("ecuries", ecuries);
-
-
     }
-
+    componentWillUpdate(nextProps,nextState){
+        if(this.state.firstPilot !== null && nextState.firstPilot !== this.state.firstPilot){
+            document.querySelector('.pilotsCompareContainer').scrollIntoView({ 
+                behavior: 'smooth' 
+            })
+        }
+    }
     async changeColor(data) {
-
         this.setState({
             selected: data
         });
@@ -37,10 +41,12 @@ class PilotsContainer extends Component {
             this.setState({ gallery });
         }
     }
-
+    setFirstPilot(firstPilot){
+        this.setState({ firstPilot });
+    }
 
     render() {
-        console.log(this.state.selected)
+        console.log('ca change ',this.state)
         return (
             <div>
                 <div className="fixe-Menu">
@@ -53,9 +59,13 @@ class PilotsContainer extends Component {
                 <Scroll
                     className="scroll"
                     galery={this.state.gallery}
-
+                    setFirstPilot={this.setFirstPilot}
                 />
-                <DataCompare year={2017} />
+                {this.state.firstPilot !== null &&
+                <DataCompare 
+                firstPilot={this.state.firstPilot}
+                data={this.state.gallery} />
+                }
             </div >
         )
     }
