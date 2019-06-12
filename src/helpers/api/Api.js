@@ -13,7 +13,8 @@ class Api {
         const pilots = data['hydra:member'].map((member, i) => {
             return Api.dataMember(member, i);
         })
-        return pilots;
+        let pilotsClassement = pilots.sort((a, b) => (a.position > b.position) ? 1 : ((b.position > a.position) ? -1 : 0));
+        return pilotsClassement;
     }
 
     /**
@@ -28,8 +29,9 @@ class Api {
         let pilots = data['hydra:member'].map((member, i) => {
             return Api.dataMember(member, i);
         })
+        let pilotsClassement = pilots.sort((a, b) => (a.position > b.position) ? 1 : ((b.position > a.position) ? -1 : 0));
 
-        return pilots;
+        return pilotsClassement;
     }
 
     /**
@@ -73,7 +75,9 @@ class Api {
             return Api.dataEcuris(member, i);
         })
         console.log(ecuris);
-        return ecuris;
+        let ecurisClassement = ecuris.sort((a, b) => (a.position > b.position) ? 1 : ((b.position > a.position) ? -1 : 0));
+
+        return ecurisClassement;
 
     }
 
@@ -86,10 +90,11 @@ class Api {
         const response = await fetch(`http://142.93.104.14/api/summary_season_constructors?year=${year}`);
         const data = await response.json();
 
-        const pilots = data['hydra:member'].map((member, i) => {
+        const ecuris = data['hydra:member'].map((member, i) => {
             return Api.dataEcuris(member, i);
         })
-        return pilots;
+        let ecurisClassement = ecuris.sort((a, b) => (a.position > b.position) ? 1 : ((b.position > a.position) ? -1 : 0));
+        return ecurisClassement;
     }
 
     /**
