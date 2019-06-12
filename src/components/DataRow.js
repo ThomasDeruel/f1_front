@@ -34,9 +34,9 @@ const DataRow = ({ data, mustBeLeft, type }) => {
                                 isAnArray={true}
                                 data={{ name: "Pilotes", value: data.drivers }} />
                         )}
+                        <ShowData icon="podium" data={{ name: "Classement", value: data.position }} />
                         <ShowData icon="star" data={{ name: "Victoires", value: data.wins }} />
                         <ShowData icon="trophy" data={{ name: "Points", value: data.score }} />
-                        <ShowData icon="timer" data={{ name: "Cumulés", value: data.cumulativeTime }} />
                         <ShowData icon="speed" data={{ name: "Vitesse", value: data.fastestLapSpeed+' km' }} />
                     </div>
                 </div>
