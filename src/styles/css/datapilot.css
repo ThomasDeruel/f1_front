@@ -1,23 +1,24 @@
 .dataPilotContainer {
-    position: relative;
-    width: 35%;
-    min-width: 680px;
+    position  : relative;
+    min-width : 42%;
     min-height: 100%;
-    overflow: hidden;
+    overflow  : hidden;
 }
-.dataPilotContainer.isLeft .dataPilotContainer-header-flex  {
+
+.dataPilotContainer.isLeft .dataPilotContainer-header-flex {
     justify-content: end;
+    padding        : 0 0 0 205px;
 }
 
 .dataPilotContainer-header-flex {
-    display:flex;
-    position: relative;
-    z-index: 999;
-    width:100%;
-    margin-top: 40px;
-    color:#CF2933;
-    height: 90px;
-    padding-bottom: 20px;
+    display        : flex;
+    position       : relative;
+    z-index        : 999;
+    width          : 100%;
+    margin-top     : 40px;
+    color          : #CF2933;
+    height         : 90px;
+    padding-bottom : 20px;
     justify-content: flex-start;
 }
 
@@ -25,84 +26,161 @@
 .dataPilotContainer.isLeft .dataPilotContainer-header-item {
     flex-direction: row;
 }
-.dataPilotContainer-header-item {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-.dataPilotContainer.isLeft .dataPilotContainer-header-item:after  {
 
-    left:0;
+.dataPilotContainer-header-item {
+    display          : flex;
+    width            : 60%;
+    /*justify-content: space-between;*/
+    position         : relative;
+    align-items      : center;
+    flex-direction   : row-reverse;
 }
+
+.dataPilotContainer.isLeft .dataPilotContainer-header-item:after {
+
+    left: 0;
+}
+
+
+
 .dataPilotContainer-header-item:after {
-    content:'';
-    width: 72px;
-    height: 2px;
+    content   : '';
+    width     : 72px;
+    height    : 2px;
     background: #CF2933;
-    position:absolute;
-    left:100%;
-    bottom: -14px;
+    position  : absolute;
+    left      : 100%;
+    bottom    : -14px;
 }
 
 .dataPilotContainer-header-item h3 {
-    font-family: "Formula Bold";
-    width:20px;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
+    font-family     : "Formula Bold";
+    width           : 20px;
+    font-size       : 24px;
+    line-height     : 36px;
+    text-transform  : uppercase;
+    background-color: #f5f5f5;
+    width           : 100%;
+    padding         : 1px 0px 0px 14px;
+}
+
+section.dataPilotContainer.isLeft h3 {
+    font-family     : "Formula Bold";
+    width           : 20px;
+    font-size       : 24px;
+    line-height     : 36px;
+    text-transform  : uppercase;
+    background-color: #f5f5f5;
+    width           : 44%;
+    padding         : 1px 0px 0px 14px;
+}
+
+
+
+.dataPilotContainer-header-flex {
+    padding: 0 0 0 188px;
+}
+
+section.dataPilotContainer h3 {
+    font-family     : "Formula Bold";
+    width           : 20px;
+    font-size       : 24px;
+    line-height     : 36px;
+    text-transform  : uppercase;
+    background-color: #f5f5f5;
+    width           : 44%;
+}
+
+.dataPilotContainer-header-flex {
+    padding: 0 0 0 0px;
+}
+
+section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
+    max-width   : 100px;
+    max-height  : 70px;
+    padding     : 0 0 0 127px;
+    /*padding   : 0 80px 0px 0px;*/
 }
 
 .dataPilotContainer-header-item img {
-    max-width: 100px;
+    max-width : 100px;
     max-height: 70px;
-}
-.dataPilotContainer-background {
-    position:absolute;
-    z-index:0;
-    width: 70%;
-    left: -10%;
-    top: 5%;
+
+    padding: 0 80px 0px 0px;
 }
 
-.dataPilotContainer-background img {
-    width: 100%;
+.dataPilotContainer-background {
+    position: absolute;
+    z-index : 0;
+    width   : 70%;
+    left    : -10%;
+    top     : 5%;
 }
+
+
 
 .dataListContainer {
-    width: calc(100% - 48px);
+    width      : calc(100% - 48px);
     margin-left: 48px;
+
+}
+
+.dataPilotContainer.isLeft .dataPilotContainer-data-flex {
+    margin-top     : 32px;
+    position       : relative;
+    z-index        : 999;
+    width          : 100%;
+    display        : flex;
+    justify-content: flex-start;
+    max-width      : 92%;
+    padding        : 152px 0 0 40px;
+
+
 }
 
 .dataPilotContainer-data-flex {
-    margin-top: 32px;
-    position: relative;
-    z-index: 999;
-    width: 100%;
-    display:flex;
+    margin-top     : 32px;
+    position       : relative;
+    z-index        : 999;
+    width          : 100%;
+    display        : flex;
     justify-content: flex-start;
+    max-width      : 92%;
+    padding        : 152px 0 0 0px;
+
 
 }
+
+.dataPilotContainer-ecurieTitle {
+    margin-left: -250px;
+
+}
+
+.dataPilotContainer.isLeft .dataPilotContainer-ecurieTitle {
+    margin-left: 0px;
+
+}
+
 .dataPilotContainer.isLeft .dataPilotContainer-data-flex {
     justify-content: flex-end;
 }
 
 .dataPilotContainer-data {
-    width: 60%;
+    width: 51%;
 }
+
 .dataPilotContainer.isLeft .dataPilotContainer-ecurieTitle {
-    display: block;
-    width: 100%;
-    font-family:'Formula Regular';
+    display    : block;
+    width      : 100%;
+    font-family: 'Formula Regular';
 }
+
 .dataPilotContainer-ecurieTitle {
-    font-family:'Formula Regular';
-    margin-bottom: 48px;
-    display: flex;
+    font-family   : 'Formula Regular';
+    margin-bottom : 48px;
+    display       : flex;
     flex-direction: row-reverse;
-    width: 122%;
+    width         : 122%;
 }
 
 

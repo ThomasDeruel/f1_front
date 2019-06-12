@@ -1,5 +1,5 @@
 import React from 'react';
-import {formulaFonts} from '../styles/fonts';
+import { formulaFonts } from '../styles/fonts';
 
 const ShowData = ({icon,data, isAnArray=false}) => {
     return (
@@ -33,7 +33,7 @@ const dataName = {
     textAlign: 'left',
     fontFamily: formulaFonts.regular,
     width: '116px',
-    marginLeft: '48px'
+    marginLeft: '29px'
 }
 const dataStyle = {
     fontFamily: formulaFonts.bold,
