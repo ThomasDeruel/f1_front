@@ -4,13 +4,23 @@ import PilotColumnItem from '../PilotColumnItem/PilotColumnItem';
 import Radar from '../Radar/Radar';
 import './datacompare.css';
 
-const DataCompare = ({year,firstPilot,data}) => {
+const DataCompare = ({year,firstPilot,data, type}) => {
     const [secondPilot,setSecondPilot] = useState(null);
 
     const otherpilots = data.filter(pilot=>{
         return pilot !== firstPilot
     })
-    
+    const labels = () => {
+        return type === "pilot" ?
+        ['points', 'temps cumulé', 'rang', 'position arrivé'] :
+        ['points', 'temps cumulé', 'rang', 'temps d\'arrêts']
+    }
+
+    const keys = () => {
+        return type === "pilot" ?
+        ['score','cumulativeMillisecond','mediumGrid','position'] :
+        ['score','cumulativeMillisecond','mediumGrid','pitStopTime']
+    }
     /**
      * data-> must be replace (must be a props)
      */
@@ -24,18 +34,26 @@ const DataCompare = ({year,firstPilot,data}) => {
     return (
         <section className="pilotsCompareContainer">
 
-            <DataRow data={firstPilot} mustBeLeft={true} year={year}/>
+            <DataRow 
+            data={firstPilot} 
+            mustBeLeft={true} 
+            year={year} 
+            type={type}/>
             
             {secondPilot !== null && (
                 <Radar 
-                labels={['points', 'temps', 'position départ', 'position arrivé']}
-                keys={['score','cumulativeTime','mediumGrid','position']}
+                labels={labels()}
+                keys={keys()}
                 data={[firstPilot,secondPilot]}
                 allValues={data}
+                type={type}
                 />
             )}
             {secondPilot !== null ?
-                <DataRow data={secondPilot} mustBeLeft={false} year={year}/>
+                <DataRow 
+                data={secondPilot}
+                mustBeLeft={false}
+                type={type}/>
             :
                 <section className="PilotColumnItemContainer">
                     {otherpilots.map((pilot,i)=>(
@@ -43,7 +61,9 @@ const DataCompare = ({year,firstPilot,data}) => {
                         key={i+95}
                         data={pilot} 
                         secondPilot={secondPilot}
-                        setSecondPilot={setSecondPilot }/>
+                        setSecondPilot={setSecondPilot }
+                        type={type}
+                        />
                     ))}
                 </section>
             }

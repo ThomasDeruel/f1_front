@@ -53,6 +53,7 @@ class Api {
             score: member.score,
             wins: member.wins,
             cumulativeTime: member.cumulativeTime,
+            cumulativeMillisecond: member.cumulativeMillisecond,
             img: member.driver.imgUrl,
             nationality: member.driver.nationality.toLowerCase()
         }
@@ -103,15 +104,16 @@ class Api {
         return {
             id: i,
             name: member.constructor.name,
-            nationality: member.constructor.nationality,
+            nationality: member.constructor.nationality.toLowerCase(),
             drivers: member.drivers,
             position: member.position,
             score: member.score,
             wins: member.wins,
             cumulativeTime: member.cumulativeTime,
+            cumulativeMillisecond: member.cumulativeMillisecond,
             fastestLapSpeed: member.fastestLapSpeed,
             mediumGrid: member.mediumGrid,
-
+            pitStopTime: member.pitStopTime
         }
     }
 }

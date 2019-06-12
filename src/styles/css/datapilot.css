@@ -185,7 +185,14 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
 
 
 .dataPilotContainer-ecurieTitle span {
-    font-family: 'Formula Bold';
-    order      : -1;
-    margin-left: 8px;
+    font-family:'Formula Bold';
+    order:-1;
+    margin-left:8px;
+}
+
+.black-and-white {
+    -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(100%); /* Firefox */
+    opacity:0.2;
+    margin-top: 25%;
 }
