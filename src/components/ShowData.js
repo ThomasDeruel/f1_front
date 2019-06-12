@@ -1,13 +1,20 @@
 import React from 'react';
 import {formulaFonts} from '../styles/fonts';
 
-const ShowData = ({icon,data}) => {
-
+const ShowData = ({icon,data, isAnArray=false}) => {
     return (
     <li style={listItem}>
         <img style={iconStyle} src={require(`../assets/img/${icon}.svg`)} alt="icon data"/>
         <p style={dataName}>{data.name}</p>
-        <p style={dataStyle}>{data.value}</p>
+        {isAnArray ? (
+            <div style={stylePilotes}>
+            {data.value.map(value=>(
+                <p style={dataStyle}>{`${value.forename} ${value.surname}`}</p>
+            ))}
+            </div>
+        ):(
+            <p style={dataStyle}>{data.value}</p>       
+        )}
     </li>
     )
 }
@@ -33,5 +40,8 @@ const dataStyle = {
     fontSize: "16px",
     color: '#CF2933'
 }
-
+ const stylePilotes = {
+     display:'flex',
+     flexDirection: 'column'
+ }
 export default ShowData;

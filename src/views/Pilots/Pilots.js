@@ -18,13 +18,12 @@ class PilotsContainer extends Component {
     }
 
     async componentWillMount() {
-
+        
         const gallery = await Api.getDefaultPilots();
-        this.setState({ gallery });
-        const ecuries = await Api.getDefaultEcuris();
-        console.log("ecuries", ecuries);
+        this.setState({ gallery,firstPilot:null });
     }
     componentWillUpdate(nextProps,nextState){
+        
         if(this.state.firstPilot !== null && nextState.firstPilot !== this.state.firstPilot){
             document.querySelector('.pilotsCompareContainer').scrollIntoView({ 
                 behavior: 'smooth' 
@@ -51,7 +50,6 @@ class PilotsContainer extends Component {
             <div>
                 <div className="fixe-Menu">
                     <NavBarScroll selected={this.changeColor} />
-
                     <NavBar />
                 </div>
 
@@ -64,7 +62,9 @@ class PilotsContainer extends Component {
                 {this.state.firstPilot !== null &&
                 <DataCompare 
                 firstPilot={this.state.firstPilot}
-                data={this.state.gallery} />
+                data={this.state.gallery}
+                type="pilot"
+                />
                 }
             </div >
         )
