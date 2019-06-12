@@ -103,7 +103,7 @@ const Scroll = (props) => {
                                 }
 
                                 <img
-                                    className="im"
+                                    className="imPilote"
 
                                     src={url.imgUrl}
 
