@@ -112,7 +112,7 @@ const Scroll = (props) => {
                                 <h1 className="name aboutPilote">{url.forename || url.name} {url.surname}</h1>
 
                                 <div>
-                                    <a><i className="ion-ios-star-outline left-icon"><p>{i + 1}</p></i></a>
+                                    <a><i className="ion-ios-star-outline left-icon"><p>{url.position}</p></i></a>
                                 </div>
                             </figure>
                         </div>
