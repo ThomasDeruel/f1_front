@@ -195,4 +195,5 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
     filter: grayscale(100%); /* Firefox */
     opacity:0.2;
     margin-top: 25%;
+    width: 100%;
 }
