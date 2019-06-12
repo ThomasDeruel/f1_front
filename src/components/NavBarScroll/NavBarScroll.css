@@ -35,3 +35,15 @@
   padding: 20px;
   cursor: pointer;
 }
+
+.arrow img {
+  width: 25px;
+}
+
+/*
+.arrow-prev {
+  !*background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9458158263305322) 61%);*!
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 39%, rgba(255,255,255,0) 48%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+}*/
