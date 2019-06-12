@@ -1,14 +1,14 @@
 import React from 'react';
-import {formulaFonts} from '../styles/fonts';
+import { formulaFonts } from '../styles/fonts';
 
-const ShowData = ({icon,data}) => {
+const ShowData = ({ icon, data }) => {
 
     return (
-    <li style={listItem}>
-        <img style={iconStyle} src={require(`../assets/img/${icon}.svg`)} alt="icon data"/>
-        <p style={dataName}>{data.name}</p>
-        <p style={dataStyle}>{data.value}</p>
-    </li>
+        <li style={listItem}>
+            <img style={iconStyle} src={require(`../assets/img/${icon}.svg`)} alt="icon data" />
+            <p style={dataName}>{data.name}</p>
+            <p style={dataStyle}>{data.value}</p>
+        </li>
     )
 }
 
@@ -26,7 +26,7 @@ const dataName = {
     textAlign: 'left',
     fontFamily: formulaFonts.regular,
     width: '116px',
-    marginLeft: '48px'
+    marginLeft: '29px'
 }
 const dataStyle = {
     fontFamily: formulaFonts.bold,
