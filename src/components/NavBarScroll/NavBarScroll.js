@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import './NavBarScroll.css';
+import arrowL from '../../assets/img/arrowhead-thin-outline-to-the-left.svg';
+import arrowR from '../../assets/img/arrow-point-to-right.svg';
 
 const list = [
     { name: '1950' },
@@ -40,6 +42,13 @@ export const Menu = (list, selected) =>
         const onClick = () => console.log('original onClick ', name);
         return <MenuItem text={name} key={name} selected={selected} onClick={onClick} />;
     });
+
+const Arrow = ({text, className}) => {
+    return <div className={className}>{text}</div>;
+};
+
+export const ArrowLeft = Arrow({text: <img src={arrowL}/>, className: 'arrow-prev arrow'});
+export const ArrowRight = Arrow({text: <img src={arrowR}/>, className: 'arrow-next arrow'});
 
 class NavBarScroll extends Component {
     state = {
@@ -129,6 +138,8 @@ class NavBarScroll extends Component {
                     <ScrollMenu
                         ref={el => (this.menu = el)}
                         data={menu}
+                        arrowLeft={ArrowLeft}
+                        arrowRight={ArrowRight}
                         transition={+transition}
                         onUpdate={this.onUpdate}
                         onSelect={this.onSelect}
