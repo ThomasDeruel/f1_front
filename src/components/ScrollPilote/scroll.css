@@ -1,6 +1,8 @@
 .scroll {
-  width  : 96%;
-  padding: 0 0 0 42px;
+  /*width  : 96%;
+  padding: 0 0 0 42px;*/
+  width: 90%;
+  margin: 0 auto;
 }
 
 .scrollPilote {
@@ -12,13 +14,14 @@
 
 .scrolldiv {
   display   : inline-block;
+  cursor: pointer;
   flex      : 1;
-  height    : 100%;
-  width     : 23.5%;
+  width     : 25%;
   transition: all 7s ease;
   position  : relative;
-  padding   : 40px 3px 8px 5px;
   transition: all 250ms ease;
+  /*height    : 100%;*/
+  /*padding   : 40px 3px 8px 5px;*/
 
 }
 
@@ -34,9 +37,10 @@
 
 .imPilote {
   flex   : 1;
-  height : 330px;
-  width  : 300px;
+  min-width: 100%;
   z-index: 1008;
+  /*height : 330px;*/
+  /*width  : 300px;*/
 }
 
 .aboutPilote {
@@ -94,13 +98,15 @@
 figure.snip {
   -webkit-transition: none !important;
   transition        : none !important;
+  cursor: pointer;
   position          : relative;
   overflow          : hidden;
-  margin            : 10px;
-  min-width         : 220px;
-
-  width: 80%;
-
+  height: 330px;
+  width: 300px;
+  margin: 0 auto;
+  /*margin            : 10px;
+  min-width         : 220px;*/
+  /*width: 80%;*/
   text-align: center;
 }
 
@@ -109,7 +115,7 @@ figure.snip:hover {
 }
 
 figure.snip img {
-  max-width         : 100%;
+  /*max-width         : 100%;*/
   opacity           : 1;
   -webkit-transition: opacity 0.35s;
   transition        : opacity 0.35s;

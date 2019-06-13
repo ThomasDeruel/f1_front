@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1f8f8eed-27ee-4ae9-bf17-68eba2ce5994" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollEcurie/scroll.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollEcurie/scroll.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollPilote/scroll.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollPilote/scroll.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollPilote/scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollPilote/scroll.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,25 +18,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ScrollPilote/scroll.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            <state relative-caret-position="400">
+              <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ScrollEcurie/scroll.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css">
+        <entry file="file://$PROJECT_DIR$/src/components/PilotColumnItem/PilotColumnItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="48" selection-end-column="3" />
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/PilotColumnItem/pilotcolumnitem.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-609" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ScrollEcurie/scroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="142" column="45" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ScrollPilote/scroll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>h1</find>
+      <find>.scrolldiv</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,9 +95,11 @@
         <option value="$PROJECT_DIR$/src/styles/scss/home.scss" />
         <option value="$PROJECT_DIR$/src/views/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/styles/scss/App.scss" />
-        <option value="$PROJECT_DIR$/src/components/ScrollPilote/scroll.css" />
         <option value="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css" />
         <option value="$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.js" />
+        <option value="$PROJECT_DIR$/src/components/ScrollPilote/scroll.js" />
+        <option value="$PROJECT_DIR$/src/components/ScrollPilote/scroll.css" />
+        <option value="$PROJECT_DIR$/src/components/ScrollEcurie/scroll.css" />
       </list>
     </option>
   </component>
@@ -75,11 +125,6 @@
             <path>
               <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="f1_front" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="f1_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -93,7 +138,14 @@
               <item name="f1_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="NavBarScroll" type="462c0819:PsiDirectoryNode" />
+              <item name="DataCompare" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="f1_front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ScrollEcurie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
@@ -101,25 +153,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ScrollPilote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="f1_front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="f1_front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="f1_front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="f1_front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,13 +202,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18204000" />
+    <option name="totallyTimeSpent" value="23709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10729355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18444847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -189,7 +222,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27914438" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27914438" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -229,27 +262,71 @@
     <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScrollPilote/scroll.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/img/arrowhead-thin-outline-to-the-left.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="48" selection-end-column="3" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/assets/img/Lotus F1.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavBarScroll/NavBarScroll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="41" selection-start-line="41" selection-end-line="48" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PilotColumnItem/PilotColumnItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollPilote/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PilotColumnItem/pilotcolumnitem.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollEcurie/scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="142" column="45" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollPilote/scroll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ScrollEcurie/scroll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
         </state>
       </provider>
     </entry>
