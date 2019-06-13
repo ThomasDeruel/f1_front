@@ -37,7 +37,7 @@ class Ecurie extends Component {
 
         const gallery = await Api.setEcuris(this.state.selected);
         if (gallery) {
-            this.setState({ gallery });
+            this.setState({ gallery,firstPilot:null });
         }
     }
     setFirstPilot(firstPilot){
@@ -62,6 +62,7 @@ class Ecurie extends Component {
                 firstPilot={this.state.firstPilot}
                 data={this.state.gallery}
                 type="constructor"
+                setFirstPilot={this.setFirstPilot}
                 />
                 }
             </div >

@@ -4,9 +4,9 @@ import ColumnSection from "../ColumnSection/ColumnSection";
 
 import './pilotcolumnitem.css';
 
-const PilotColumnItem = ({data,secondPilot,setSecondPilot, type}) => {
+const PilotColumnItem = ({data,secondPilot,setSecondData, type}) => {
     return (
-            <div onClick={()=>setSecondPilot(secondPilot = data)} className="PilotColumnItemContainer-flex">
+            <div onClick={()=>setSecondData(secondPilot = data)} className="PilotColumnItemContainer-flex">
                     {type === 'pilot' ? (
                         <div className="PilotColumnItemContainer-personalDataContainer">
                         <img className="PilotColumnItemContainer-imgContainer" src={require(`../../assets/img/flags/${data.nationality}.svg`)} alt="logo flag"/>

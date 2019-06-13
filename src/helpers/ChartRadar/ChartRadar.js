@@ -3,7 +3,7 @@ import Chart from 'chart.js';
 class ChartRadar{
     ctx;
     option;
-    labels = [];
+    labels;
     dataSets;
 
     constructor(chart,labels, dataSets, ...arg){
