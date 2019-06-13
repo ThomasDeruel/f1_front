@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 const HomeContainer = () => {
-
   return (
     <div className="home">
       <div className="coverbackground">

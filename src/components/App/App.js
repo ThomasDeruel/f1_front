@@ -1,7 +1,6 @@
 //Configs
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { MenuContext } from '../../helpers/context/menu-context';
 import '../../styles/scss/App.scss';
 //Containers
 import HomeContainer from "../../views/Home/Home";
