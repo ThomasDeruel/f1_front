@@ -1,10 +1,9 @@
 import React from 'react';
-import MenuConsumer from '../../components/MenuConsumer';
 import roue from '../../styles/images/roue.png';
-import { router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-const HomeContainer = ({ menuOpen, setMenuOpen }) => {
+const HomeContainer = () => {
 
   return (
     <div className="home">
@@ -30,4 +29,4 @@ const HomeContainer = ({ menuOpen, setMenuOpen }) => {
   )
 }
 
-export default MenuConsumer(HomeContainer);
+export default HomeContainer;
