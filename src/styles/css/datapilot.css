@@ -43,15 +43,26 @@
 
 
 
-.dataPilotContainer-header-item:after {
+section.dataPilotContainer.isLeft .dataPilotContainer-header-item h3:after {
     content   : '';
     width     : 72px;
     height    : 2px;
     background: #CF2933;
     position  : absolute;
-    left      : 100%;
-    bottom    : -14px;
+    left: 10px;
+    bottom: 9px;
 }
+
+.dataPilotContainer-header-item h3:after {
+    content   : '';
+    width     : 72px;
+    height    : 2px;
+    background: #CF2933;
+    position  : absolute;
+    left: 10px;
+    bottom: 9px;
+}
+
 
 .dataPilotContainer-header-item h3 {
     font-family     : "Formula Bold";
@@ -61,7 +72,8 @@
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 100%;
-    padding         : 1px 0px 0px 14px;
+    padding: 10px;
+    /*padding         : 1px 0px 0px 14px;*/
 }
 
 section.dataPilotContainer.isLeft h3 {
@@ -72,13 +84,62 @@ section.dataPilotContainer.isLeft h3 {
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 44%;
-    padding         : 1px 0px 0px 14px;
+    position: relative;
+    /*padding         : 1px 0px 0px 14px;*/
 }
 
 
 
 .dataPilotContainer-header-flex {
     padding: 0 0 0 188px;
+}
+
+section.dataPilotContainer.isLeft button {
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 50px;
+    color: #CF2933;
+    border-color: #CF2933;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+}
+
+section.dataPilotContainer.isLeft button:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 350ms ease-in;
+}
+
+section.dataPilotContainer button {
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 50px;
+    color: #CF2933;
+    border-color: #CF2933;
+    outline: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    /*right: 0;*/
+}
+
+section.dataPilotContainer button:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 350ms ease-in;
 }
 
 section.dataPilotContainer h3 {
@@ -89,6 +150,8 @@ section.dataPilotContainer h3 {
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 44%;
+    margin-top: 21px;
+    position: relative;
 }
 
 .dataPilotContainer-header-flex {
@@ -132,7 +195,8 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
     display        : flex;
     justify-content: flex-start;
     max-width      : 92%;
-    padding        : 152px 0 0 40px;
+    /*padding        : 152px 0 0 40px;*/
+    padding        : 152px 0 0 0;
 
 
 }
@@ -169,7 +233,8 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
 }
 
 .dataPilotContainer.isLeft .dataPilotContainer-ecurieTitle {
-    display    : block;
+    /*display    : block;*/
+    display: none;
     width      : 100%;
     font-family: 'Formula Regular';
 }
@@ -180,6 +245,7 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
     display       : flex;
     flex-direction: row-reverse;
     width         : 122%;
+    display       : none;
 }
 
 

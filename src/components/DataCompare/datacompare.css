@@ -5,6 +5,7 @@
     width: 100%;
     overflow:hidden;
     position: relative;
+    margin-top: 250px;
 }
 
 .PilotColumnItemContainer:before{
@@ -29,6 +30,7 @@
     display:none;
     background:blue;
 }
+
 @keyframes test {
     0%{opacity:1}
     50%{opacity:1}
