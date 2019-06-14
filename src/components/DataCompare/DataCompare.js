@@ -4,8 +4,8 @@ import PilotColumnItem from '../PilotColumnItem/PilotColumnItem';
 import Radar from '../Radar/Radar';
 import './datacompare.css';
 
-const DataCompare = ({year,firstPilot,data, type}) => {
-    const [secondPilot,setSecondPilot] = useState(null);
+const DataCompare = ({year,firstPilot, setFirstPilot, data, type}) => {
+    const [secondData,setSecondData] = useState(null);
 
     const otherpilots = data.filter(pilot=>{
         return pilot !== firstPilot
@@ -38,30 +38,34 @@ const DataCompare = ({year,firstPilot,data, type}) => {
             data={firstPilot} 
             mustBeLeft={true} 
             year={year} 
-            type={type}/>
+            type={type}
+            setData={setFirstPilot}
+            />
             
-            {secondPilot !== null && (
+            {secondData !== null && (
                 <Radar 
                 labels={labels()}
                 keys={keys()}
-                data={[firstPilot,secondPilot]}
+                data={[firstPilot,secondData]}
                 allValues={data}
                 type={type}
                 />
             )}
-            {secondPilot !== null ?
+            {secondData !== null ?
                 <DataRow 
-                data={secondPilot}
+                data={secondData}
                 mustBeLeft={false}
-                type={type}/>
+                type={type}
+                setData={setSecondData}
+                />
             :
                 <section className="PilotColumnItemContainer">
                     {otherpilots.map((pilot,i)=>(
                         <PilotColumnItem 
                         key={i+95}
                         data={pilot} 
-                        secondPilot={secondPilot}
-                        setSecondPilot={setSecondPilot }
+                        secondData={secondData}
+                        setSecondData={setSecondData }
                         type={type}
                         />
                     ))}

@@ -18,7 +18,6 @@ class PilotsContainer extends Component {
     }
 
     async componentWillMount() {
-        
         const gallery = await Api.getDefaultPilots();
         this.setState({ gallery,firstPilot:null });
     }
@@ -37,7 +36,7 @@ class PilotsContainer extends Component {
 
         const gallery = await Api.setPilots(this.state.selected);
         if (gallery) {
-            this.setState({ gallery });
+            this.setState({ gallery,firstPilot:null });
         }
     }
     setFirstPilot(firstPilot){
@@ -64,6 +63,7 @@ class PilotsContainer extends Component {
                 firstPilot={this.state.firstPilot}
                 data={this.state.gallery}
                 type="pilot"
+                setFirstPilot={this.setFirstPilot}
                 />
                 }
             </div >

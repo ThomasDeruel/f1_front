@@ -3,10 +3,11 @@ import ShowData from './ShowData';
 import constructors from '../helpers/constant/constructor.json';
 import '../styles/css/datapilot.css';
 
-const DataRow = ({ data, mustBeLeft, type }) => {
+const DataRow = ({ data, mustBeLeft, type, setData }) => {
 
     return (
         <section className={`dataPilotContainer ${mustBeLeft ? 'isLeft' : ''}`}>
+            <button onClick={()=>setData(null)}>X</button>
             <div className="dataPilotContainer-header-flex">
                 <div className="dataPilotContainer-header-item">
                     {type === 'pilot' ? (
