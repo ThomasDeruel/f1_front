@@ -7,7 +7,7 @@ const DataRow = ({ data, mustBeLeft, type, setData }) => {
 
     return (
         <section className={`dataPilotContainer ${mustBeLeft ? 'isLeft' : ''}`}>
-            <button onClick={()=>setData(null)}>X</button>
+            <div className="x" onClick={()=>setData(null)}></div>
             <div className="dataPilotContainer-header-flex">
                 <div className="dataPilotContainer-header-item">
                     {type === 'pilot' ? (
