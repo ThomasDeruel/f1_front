@@ -57,7 +57,8 @@ class Api {
             cumulativeTime: member.cumulativeTime,
             cumulativeMillisecond: member.cumulativeMillisecond,
             img: member.driver.imgUrl,
-            nationality: member.driver.nationality.toLowerCase()
+            nationality: member.driver.nationality.toLowerCase(),
+            nbFirstGrid: member.nbFirstGrid
         }
     }
 
@@ -118,7 +119,8 @@ class Api {
             cumulativeMillisecond: member.cumulativeMillisecond,
             fastestLapSpeed: member.fastestLapSpeed,
             mediumGrid: member.mediumGrid,
-            pitStopTime: member.pitStopTime
+            pitStopTime: member.pitStopTime,
+            nbFirstGrid: member.nbFirstGrid
         }
     }
 }

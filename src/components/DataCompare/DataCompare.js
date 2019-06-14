@@ -12,14 +12,14 @@ const DataCompare = ({year,firstPilot, setFirstPilot, data, type}) => {
     })
     const labels = () => {
         return type === "pilot" ?
-        ['points', 'temps cumulé', 'rang', 'position arrivé'] :
-        ['points', 'temps cumulé', 'rang', 'temps d\'arrêts']
+        ['points', 'Pole position', 'rang', 'position arrivé'] :
+        ['points', 'Pole position', 'rang', 'temps d\'arrêts']
     }
 
     const keys = () => {
         return type === "pilot" ?
-        ['score','cumulativeMillisecond','mediumGrid','position'] :
-        ['score','cumulativeMillisecond','mediumGrid','pitStopTime']
+        ['score','nbFirstGrid','mediumGrid','position'] :
+        ['score','nbFirstGrid','mediumGrid','pitStopTime']
     }
     /**
      * data-> must be replace (must be a props)
