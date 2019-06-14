@@ -42,7 +42,7 @@ const PilotColumnItem = ({data,secondPilot,setSecondData, type}) => {
                 <div className="PilotColumnItemContainer-ColumnSectionContainer">
                     <ColumnSection type="Victoire" value={data.score}/>
                     <ColumnSection type="Tours temps" value={data.cumulativeTime}/>
-                    <ColumnSection type="Vitesse moyenne" value={data.fastestLapSpeed}/>
+                    <ColumnSection type="Pole position" value={data.nbFirstGrid}/>
                 </div>
             </div>
     )
