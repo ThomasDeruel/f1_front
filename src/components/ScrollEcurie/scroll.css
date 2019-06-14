@@ -39,28 +39,23 @@
 }
 
 .aboutPilote {
-  position   : absolute;
-  z-index    : 999;
-  margin     : 0 auto;
-  left       : 0;
-  right      : 0;
-  text-align : center;
-  top        : 70%;
-  font-family: Formula Bold;
-  width      : 100%;
-  color      : black;
+  /*position   : absolute;*/
+  /*z-index    : 999;*/
+  /*margin     : 0 auto;*/
+  /*left       : 0;*/
+  /*right      : 0;*/
+  /*text-align : center;*/
+  /*top        : 70%;*/
+  /*font-family: Formula Bold;*/
+  /*width      : 100%;*/
+  /*color      : black;*/
 
-  font-weight   : 900;
-  color         : white;
-  text-transform: uppercase;
-  margin        : 0;
-  position      : absolute;
-  top           : 241px;
-  left          : 50%;
-  font-size     : 2rem;
-  transform     : translate(-50%, -50%);
-  background    : rgba(255, 255, 255, 0.75);
-  color         : black;
+  /*font-weight   : 900;*/
+  /*text-transform: uppercase;*/
+  /*font-size     : 2rem;*/
+  /*transform     : translate(-50%, -50%);*/
+  /*background    : rgba(255, 255, 255, 0.75);*/
+  /*color         : black;*/
 }
 
 .name {

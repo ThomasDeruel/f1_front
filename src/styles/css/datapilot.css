@@ -43,7 +43,7 @@
 
 
 
-.dataPilotContainer-header-item:after {
+.dataPilotContainer-header-item h3:after {
     content   : '';
     width     : 72px;
     height    : 2px;
@@ -61,7 +61,8 @@
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 100%;
-    padding         : 1px 0px 0px 14px;
+    padding: 10px;
+    /*padding         : 1px 0px 0px 14px;*/
 }
 
 section.dataPilotContainer.isLeft h3 {
@@ -72,7 +73,7 @@ section.dataPilotContainer.isLeft h3 {
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 44%;
-    padding         : 1px 0px 0px 14px;
+    /*padding         : 1px 0px 0px 14px;*/
 }
 
 
@@ -89,6 +90,7 @@ section.dataPilotContainer h3 {
     text-transform  : uppercase;
     background-color: #f5f5f5;
     width           : 44%;
+    margin-top: 21px;
 }
 
 .dataPilotContainer-header-flex {
@@ -132,7 +134,8 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
     display        : flex;
     justify-content: flex-start;
     max-width      : 92%;
-    padding        : 152px 0 0 40px;
+    /*padding        : 152px 0 0 40px;*/
+    padding        : 152px 0 0 0;
 
 
 }
@@ -169,7 +172,8 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
 }
 
 .dataPilotContainer.isLeft .dataPilotContainer-ecurieTitle {
-    display    : block;
+    /*display    : block;*/
+    display: none;
     width      : 100%;
     font-family: 'Formula Regular';
 }
@@ -180,6 +184,7 @@ section.dataPilotContainer.isLeft .dataPilotContainer-header-item img {
     display       : flex;
     flex-direction: row-reverse;
     width         : 122%;
+    display       : none;
 }
 
 
